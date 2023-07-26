@@ -57,9 +57,9 @@ To create the color scheme I looked at various pictures of dogs I might use as h
 ![Color contrast](assets/docs/screenshots/color_contrast.png)
 
 ### **Fonts**
-I used [fontpair.co](https://www.fontpair.co/) to get some inspiration for possible Font Pairings. I wanted to use [Google Fonts](https://fonts.google.com/) and decided to use **Nunito** for my headings and **PT Sans** for my text. These to fonts seem to pair nicely and I like the rounded, playful shape of Nunito for the topic of this website.
+I used [fontpair.co](https://www.fontpair.co/) to get some inspiration for possible Font Pairings. I wanted to use [Google Fonts](https://fonts.google.com/) and decided to use **Nunito** for my headings and **PT Sans** for my text. These two fonts seem to pair nicely and I like the rounded, playful shape of Nunito for the topic of this website.
 
 ### **Logo**
-After choosing my colors and fonts I wanted to make a simple Logo for my website, as the *Furry Friends Shelter* doesn´t exist in the real world. I used my main color and fonts in the creation of the Logo. The paw prints I used are my own dogs paws.
+After choosing my colors and fonts I wanted to make a simple Logo for my website, as the *Furry Friends Shelter* does not exist in the real world. I used my colors and fonts for the creation of the Logo. The paw prints I used are my own dogs paws.
 
 ![Furry Friends Logo](assets/docs/screenshots/logo.png)
