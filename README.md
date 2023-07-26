@@ -1,39 +1,65 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **Furry Friends Shelter**
 
-Welcome,
+## **Planning**
+### **External user´s goals:**
+- adopt a dog
+- support the shelter
+- look at cute pictures of dogs
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+### **Site owner´s goals:**
+- find a new home for the dogs
+- get donations
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
+### **User Stories:**
+- As a user I want to navigate the website using multiple devices.
+- As a user I want to find general information about the shelter
+- As a user I want to find out which dogs are available for adoption.
+- As a user I want to apply for a dog.
+- As a user I want to support the shelter.
+- As a user I want to see pictures of dogs.
 
-## Codeanywhere Reminders
+- As the site owner I want to find a loving home for the dogs.
+- As the site owner I want to get donations.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+### **Features to achieve the goals:**
+- The website will be built with a mobile first approach, to ensure it is responsive. I will also test it on various devices and screen sizes.
+- General information about the shelter like the opening hours and address will be included in the footer.
+- The dogs that are available for adoption will be presented on a seperate page (*Our Dogs*) with a picture and description of the dog.
+- An application form with relevant information will be included on a seperate page (*Contact*).
+- On a seperate page (*Found a friend*) pictures and a video will be included to show the dogs that are already adopted with their new owners.
 
-`python3 -m http.server`
+- Call to action buttons will be used throughout the website to get donations.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### **Wireframes**
+I created wireframes to visualize my ideas using [Balsamiq](https://balsamiq.com/). As I want to stick to the mobile first approach I created wireframes for mobile, tablet and desktop screen sizes.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+- **Mobile Wireframes:**
+    - [Home](assets/docs/wireframes/wireframe_mobile_home.png)
+    - [Our Dogs](assets/docs/wireframes/wireframe_mobile_our_dogs.png)
+    - [Contact](assets/docs/wireframes/wireframe_mobile_contact.png)
+    - [Found a friend](assets/docs/wireframes/wireframe_mobile_found_a_friend.png)
+    
+- **Tablet Wireframes:**
+    - [Home](assets/docs/wireframes/wireframe_tablet_home.png)
+    - [Our Dogs](assets/docs/wireframes/wireframe_tablet_our_dogs.png)
+    - [Contact](assets/docs/wireframes/wireframe_tablet_contact.png)
+    - [Found a friend](assets/docs/wireframes/wireframe_tablet_found_a_friend.png)
 
-`http_server`
+- **Desktop Wireframes:**
+    - [Home](assets/docs/wireframes/wireframe_desktop_home.png)
+    - [Our Dogs](assets/docs/wireframes/wireframe_desktop_our_dogs.png)
+    - [Contact](assets/docs/wireframes/wireframe_desktop_contact.png)
+    - [Found a friend](assets/docs/wireframes/wireframe_desktop_found_a_friend.png)
+    
+### **Color Scheme**
+To create the color scheme I looked at various pictures of dogs I might use as hero images. I quickly decided to go for green as my main color and picked `#83A603` to be one of my main colors. Then I used [coolors.co](https://coolors.co/) to find matching colors for my scheme. After picking out my five main colors I used [contrast-grid.eightshapes.com](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%2383a603%0D%0A%231b4001%0D%0A%23f0deb4%0D%0A%23f6f7eb%0D%0A%23001e1d&es-color-form__tile-size=regular&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) to check the contrast and possible color combinations.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+![Color contrast](assets/docs/screenshots/color_contrast.png)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### **Fonts**
+I used [fontpair.co](https://www.fontpair.co/) to get some inspiration for possible Font Pairings. I wanted to use [Google Fonts](https://fonts.google.com/) and decided to use **Nunito** for my headings and **PT Sans** for my text. These to fonts seem to pair nicely and I like the rounded, playful shape of Nunito for the topic of this website.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### **Logo**
+After choosing my colors and fonts I wanted to make a simple Logo for my website, as the *Furry Friends Shelter* doesn´t exist in the real world. I used my main color and fonts in the creation of the Logo. The paw prints I used are my own dogs paws.
 
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+![Furry Friends Logo](assets/docs/screenshots/logo.png)
