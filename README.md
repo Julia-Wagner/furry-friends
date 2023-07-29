@@ -71,7 +71,15 @@ The images used for the website are taken from [unsplash.com](https://unsplash.c
 ### **Header**
 To follow my mobile first approach I started by looking at tutorials on how to implement a hamburger menu without JS. I found a video with the according [Codepen](https://codepen.io/kevinpowell/pen/jxppmr) from Kevin Powell. I used the information from the video and example code in the Codepen for my navigation.
 
+The navigation header is sticky to improve UX. This way the user can easily navigate the website and click on another page from anywhere.
+
 Below my navigation I have a hero image on each page. On the homepage the hero is bigger than on the other pages. I added an overlay on top of the hero images to make sure that the text is readable.
+
+### **Footer**
+The footer includes the shelter´s opening hours, a Google Maps screenshot and links to the site´s pages. The Facebook and Instagram page are also linked in the Footer.
+At the bottom of the footer I have the copyright information. This includes the disclaimer, that the website was only made for educational purposes and that the images where taken from Unsplash.
+
+In order to create an MVP without JavaScript I only included a screenshot of Google Maps. To further improve the website after this course I would use the [Google Maps API](https://developers.google.com/maps) to add a usable map to the footer.
 
 ## **Deployment**
 I followed my mentors tip and deployed my website early, after implementing the header. The steps to deploying a website on GitHub pages are:

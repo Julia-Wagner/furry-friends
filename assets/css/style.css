@@ -21,8 +21,15 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     color: var(--black);
     font-family: 'PT Sans', sans-serif;
+}
+
+/* push footer to bottom of the page */
+main {
+    flex-grow: 1;
 }
 
 h1,
@@ -66,31 +73,6 @@ header {
     align-items: center;
 }
 
-.nav-burger-label span,
-.nav-burger-label span::before,
-.nav-burger-label span::after {
-    display: block;
-    background: var(--black);
-    height: 3px;
-    width: 2em;
-    border-radius: 2px;
-    position: relative;
-}
-
-.nav-burger-label span::before,
-.nav-burger-label span::after {
-    content: '';
-    position: absolute;
-}
-
-.nav-burger-label span::before {
-    bottom: 7px;
-}
-
-.nav-burger-label span::after {
-    top: 7px;
-}
-
 nav {
     position: absolute;
     text-align: center;
@@ -122,7 +104,8 @@ nav li {
     transition: opacity 150ms ease-in-out;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     color: var(--darkgreen);
 }
 
@@ -195,7 +178,7 @@ nav li {
     .nav-button.cta-button {
         margin: 0;
     }
-    
+
     .nav-link::before {
         content: '';
         display: block;
@@ -212,7 +195,7 @@ nav li {
     .nav-link:hover::before {
         transform: scale(1, 1);
     }
-    
+
     .nav-button.active::before {
         transform: scale(1, 1);
     }
@@ -288,13 +271,72 @@ nav li {
     .hero-text h1 {
         font-size: 3rem;
     }
-    
+
     .hero-text p {
         font-size: 2rem;
     }
-    
+
     .hero-button.cta-button {
         margin-top: 3rem;
         font-size: 1.5rem;
+    }
+}
+
+/* footer */
+.footer {
+    bottom: 0;
+}
+
+.footer-container {
+    text-align: center;
+    padding: 2rem 0;
+    background: var(--darkgreen);
+    color: var(--white);
+    font-size: 1.1rem;
+}
+
+.footer-container h3 {
+    font-size: 1.5rem;
+}
+
+.footer-container img {
+    max-width: 100%;
+    margin: 2rem 0;
+}
+
+.footer-links ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-links li {
+    margin: 1rem 0;
+}
+
+.footer-link {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.copyright {
+    text-align: center;
+    background: var(--beige);
+    color: var(--black);
+    margin: 0;
+    padding: .5rem 0;
+}
+
+.copyright a {
+    color: var(--darkgreen);
+}
+
+/* desktop footer */
+@media screen and (min-width: 900px) {
+    .footer-container {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0;
     }
 }
