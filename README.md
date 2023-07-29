@@ -59,7 +59,25 @@ To create the color scheme I looked at various pictures of dogs I might use as h
 ### **Fonts**
 I used [fontpair.co](https://www.fontpair.co/) to get some inspiration for possible Font Pairings. I wanted to use [Google Fonts](https://fonts.google.com/) and decided to use **Nunito** for my headings and **PT Sans** for my text. These two fonts seem to pair nicely and I like the rounded, playful shape of Nunito for the topic of this website.
 
-### **Logo**
+### **Logo and Images**
 After choosing my colors and fonts I wanted to make a simple Logo for my website, as the *Furry Friends Shelter* does not exist in the real world. I used my colors and fonts for the creation of the Logo. The paw prints I used are my own dogs paws.
 
 ![Furry Friends Logo](assets/docs/screenshots/logo.png)
+
+The images used for the website are taken from [unsplash.com](https://unsplash.com/) and compressed using [tinypng.com](https://tinypng.com/). Some images of dogs are my own pictures.
+
+## **Features**
+
+### **Header**
+To follow my mobile first approach I started by looking at tutorials on how to implement a hamburger menu without JS. I found a video with the according [Codepen](https://codepen.io/kevinpowell/pen/jxppmr) from Kevin Powell. I used the information from the video and example code in the Codepen for my navigation.
+
+Below my navigation I have a hero image on each page. On the homepage the hero is bigger than on the other pages. I added an overlay on top of the hero images to make sure that the text is readable.
+
+## **Deployment**
+I followed my mentors tip and deployed my website early, after implementing the header. The steps to deploying a website on GitHub pages are:
+1. Open the [repository](https://github.com/Julia-Wagner/furry-friends) and go to the **Settings** tab.
+2. Navigate to the **Pages** tab in the left menu.
+3. Choose **Deploy from a branch** and select the according branch, *main* in my case.
+4. Click save. The link to the deployed website can then be found in the [repository](https://github.com/Julia-Wagner/furry-friends) on the right menu under **Environments**.
+
+The link to my live site is: [Furry Friends Shelter](https://julia-wagner.github.io/furry-friends/)

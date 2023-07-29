@@ -202,7 +202,7 @@ nav li {
         height: 5px;
         background: black;
         position: absolute;
-        top: -.75em;
+        bottom: -.75em;
         left: 0;
         right: 0;
         transform: scale(0, 1);
