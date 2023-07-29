@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <meta name="description" content="Static site for the Furry Friends Shelter">
     <meta name="keywords" content="Furry Friends Shelter, Dog Shelter">
     <meta name="author" content="Julia Wagner">
+    <title>Furry Friends Shelter</title>
     <!-- link to favicon -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/favicon/apple-touch-icon-144x144.png" />
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/favicon/apple-touch-icon-152x152.png" />
@@ -14,9 +16,41 @@
     <link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png" sizes="16x16" />
     <!-- link to CSS file -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Furry Friends Shelter</title>
 </head>
+
 <body>
-    <h1>Hello World</h1>
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="header-logo">
+            <img src="assets/images/logo.png" alt="Furry Friends Shelter Logo links to homepage">
+        </a>
+        <input type="checkbox" id="nav-burger" class="nav-burger">
+        <nav>
+            <ul class="nav-wrapper">
+                <li><a href="#" class="nav-button nav-link">Our Dogs</a></li>
+                <li><a href="#" class="nav-button nav-link">Contact</a></li>
+                <li><a href="#" class="nav-button nav-link">Found a friend</a></li>
+                <li><a href="#" class="nav-button cta-button">Donate</a></li>
+            </ul>
+        </nav>
+        <label for="nav-burger" class="nav-burger-label">
+            <span></span>
+        </label>
+    </header>
+    <section class="hero-container">
+        <div class="hero-image home"></div>
+        <div class="hero-text">
+            <h1>Furry Friends Shelter</h1>
+            <p>Find your new best friend today</p>
+            <a href="#" class="hero-button cta-button">Our Dogs</a>
+        </div>
+    </section>
+
+    <!-- Main content -->
+    <main></main>
+
+    <!-- Footer -->
+    <footer></footer>
 </body>
+
 </html>

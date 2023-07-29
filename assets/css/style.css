@@ -1,15 +1,281 @@
 /* Google fonts import Nunito and PT Sans */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/* color variables */
+:root {
+    --lightgreen: #83a603;
+    --darkgreen: #1b4001;
+    --beige: #f0deb4;
+    --white: #f6f7eb;
+    --black: #001e1d;
+}
+
 /* override default browser styles and add general styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    color: #001e1d;
+    color: var(--black);
     font-family: 'PT Sans', sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Nunito', sans-serif;
+}
+
+/* header styles */
+/* mobile hamburger menu, inspiration from Kevin Powell https://codepen.io/kevinpowell/pen/jxppmr */
+header {
+    background: var(--lightgreen);
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    padding: 1rem 2rem;
+    top: 0;
+}
+
+.header-logo img {
+    height: 6rem;
+}
+
+.nav-burger {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
+
+.nav-burger:focus~.nav-burger-label {
+    outline: 3px solid rgba(lightblue, .75);
+}
+
+.nav-burger-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-burger-label span,
+.nav-burger-label span::before,
+.nav-burger-label span::after {
+    display: block;
+    background: var(--black);
+    height: 3px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-burger-label span::before,
+.nav-burger-label span::after {
+    content: '';
+    position: absolute;
+}
+
+.nav-burger-label span::before {
+    bottom: 7px;
+}
+
+.nav-burger-label span::after {
+    top: 7px;
+}
+
+nav {
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    left: 0;
+    background: var(--lightgreen);
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 1.3em;
+}
+
+.nav-button {
+    color: var(--black);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--darkgreen);
+}
+
+.cta-button {
+    border: 1px solid var(--darkgreen);
+    background: var(--darkgreen);
+    color: var(--white);
+    display: inline-block;
+    border-radius: 2rem;
+    text-decoration: none;
+    padding: 0.6rem 2rem;
+}
+
+.nav-button.cta-button {
+    margin: .5rem 0 2rem 0;
+}
+
+.nav-burger:checked~nav {
+    transform: scale(1, 1);
+}
+
+.nav-burger:checked~nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+/* desktop menu */
+@media screen and (min-width: 900px) {
+    .nav-burger-label {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(700px, 6fr) 1fr;
+    }
+
+    .header-logo {
+        grid-column: 2 / 3;
+    }
+
+    nav {
+        position: relative;
+        transition: none;
+        transform: scale(1, 1);
+        background: none;
+        top: initial;
+        left: initial;
+        grid-column: 3 / 4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+    }
+
+    nav li {
+        margin-left: 3em;
+        margin-bottom: 0;
+    }
+
+    .nav-button {
+        opacity: 1;
+        position: relative;
+    }
+
+    .nav-button.cta-button {
+        margin: 0;
+    }
+    
+    .nav-link::before {
+        content: '';
+        display: block;
+        height: 5px;
+        background: black;
+        position: absolute;
+        top: -.75em;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        transition: transform ease-in-out 250ms;
+    }
+
+    .nav-link:hover::before {
+        transform: scale(1, 1);
+    }
+    
+    .nav-button.active::before {
+        transform: scale(1, 1);
+    }
+}
+
+
+/* hero */
+.hero-container {
+    margin-top: 8rem;
+    position: relative;
+}
+
+.hero-image {
+    height: 75vh;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, .4);
+    background-blend-mode: overlay;
+}
+
+.hero-image.home {
+    background-image: url(../images/hero_home.jpg);
+}
+
+.hero-text {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+    margin-bottom: 0.7rem;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    width: 60vw;
+    margin: auto;
+}
+
+.hero-button.cta-button {
+    margin-top: 8rem;
+    font-size: 1.2rem;
+}
+
+/* desktop hero */
+@media screen and (min-width: 900px) {
+    .hero-text {
+        top: 10%
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-text p {
+        font-size: 2rem;
+    }
+    
+    .hero-button.cta-button {
+        margin-top: 3rem;
+        font-size: 1.5rem;
+    }
 }
