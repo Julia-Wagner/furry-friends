@@ -218,7 +218,6 @@ nav li {
     }
 }
 
-
 /* hero */
 .hero-container {
     margin-top: 8rem;
@@ -229,12 +228,28 @@ nav li {
     height: 75vh;
     background-size: cover;
     background-position: center;
-    background-color: rgba(255, 255, 255, .4);
+    background-color: rgba(255, 255, 255, .5);
     background-blend-mode: overlay;
+}
+
+.hero-smaller .hero-image {
+    height: 35vh;
 }
 
 .hero-image.home {
     background-image: url(../images/hero_home.jpg);
+}
+
+.hero-image.dogs {
+    background-image: url(../images/hero_dogs.jpg);
+}
+
+.hero-image.contact {
+    background-image: url(../images/hero_contact.jpg);
+}
+
+.hero-image.friend {
+    background-image: url(../images/hero_friend.jpg);
 }
 
 .hero-text {
@@ -258,6 +273,10 @@ nav li {
 .hero-button.cta-button {
     margin-top: 8rem;
     font-size: 1.2rem;
+}
+
+.hero-smaller .hero-text {
+    top: 35%;
 }
 
 /* desktop hero */
