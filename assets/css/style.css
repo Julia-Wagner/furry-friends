@@ -341,19 +341,32 @@ nav li {
     }
 }
 
-/* Our Dogs Content */
+/* Main content */
+main {
+    padding: 2rem 0;
+}
+
+main a {
+    color: var(--darkgreen);
+}
+
+main a:hover {
+    color: var(--lightgreen);
+}
+
 section.heading {
-    max-width: 85%;
+    max-width: 70%;
     margin: auto;
 }
 
 section.heading h2 {
+    font-size: 2rem;
     text-align: center;
 }
 
+/* Our Dogs Content */
 section.dog-cards {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
 }
 
 .dog-card figure {
@@ -361,8 +374,8 @@ section.dog-cards {
 }
 
 article.dog-card {
-    width: 80%;
-    margin: 2rem auto;
+    width: 90%;
+    margin: 1rem auto;
     border: 4px solid var(--lightgreen);
     box-shadow: 3px 5px 10px 2px rgba(0,0,0,0.2);
 }
@@ -372,6 +385,7 @@ article.dog-card {
     height: 16rem;
     width: 100%;
     object-fit: cover;
+    object-position: top;
     display: block;
 }
 
@@ -394,4 +408,19 @@ article.dog-card {
 .dog-card p {
     margin: 0;
     padding: 0 1rem 1rem 1rem;
+}
+
+/* tablet our dogs */
+@media screen and (min-width: 700px) {
+    section.dog-cards {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 2rem;
+    }
+}
+
+/* desktop our dogs */
+@media screen and (min-width: 1000px) {
+    section.dog-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
