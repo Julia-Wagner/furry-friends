@@ -110,13 +110,18 @@ nav li {
 }
 
 .cta-button {
-    border: 1px solid var(--darkgreen);
+    border: 2px solid var(--darkgreen);
     background: var(--darkgreen);
     color: var(--white);
     display: inline-block;
     border-radius: 2rem;
     text-decoration: none;
     padding: 0.6rem 2rem;
+}
+
+.cta-button:hover {
+    background: var(--white);
+    color: var(--darkgreen);
 }
 
 .nav-button.cta-button {
@@ -492,6 +497,12 @@ input#submit-button {
     font-weight: bold;
     border: 2px solid var(--darkgreen);
     margin-top: 1.5rem;
+}
+
+input#submit-button:hover {
+    cursor: pointer;
+    background: var(--darkgreen);
+    color: var(--white);
 }
 
 /* tablet and desktop contact */
