@@ -452,6 +452,28 @@ article.dog-card {
     border: 0;
 }
 
+/* change font-family for input text placeholder in all browsers */
+.form-input input, 
+.form-input input::-webkit-input-placeholder, 
+.form-input textarea::-webkit-input-placeholder {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.form-input input:-ms-input-placeholder, 
+.form-input textarea:-ms-input-placeholder {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.form-input input:-moz-placeholder, 
+.form-input textarea:-moz-placeholder {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.form-input input::-moz-placeholder, 
+.form-input textarea::-moz-placeholder {
+    font-family: 'PT Sans', sans-serif;
+}
+
 .form-input textarea {
     resize: vertical;
 }
