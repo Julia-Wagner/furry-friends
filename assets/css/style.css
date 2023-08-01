@@ -427,7 +427,8 @@ article.dog-card {
 
 /* Contact content */
 .application-container {
-    padding: 1rem 2rem;
+    max-width: 80%;
+    margin: 1rem auto;
 }
 
 .form-input label {
@@ -451,13 +452,39 @@ article.dog-card {
     border: 0;
 }
 
+.form-input textarea {
+    resize: vertical;
+}
+
+form.application-form {
+    display: flex;
+    flex-direction: column;
+}
+
 input#submit-button {
     background: var(--white);
     color: var(--darkgreen);
-    padding: 0.7rem 2rem;
+    padding: 0.7rem 3rem;
     border-radius: 2rem;
     font-size: 1rem;
     font-weight: bold;
     border: 2px solid var(--darkgreen);
     margin-top: 1.5rem;
+}
+
+/* tablet and desktop contact */
+@media screen and (min-width: 700px) {
+    .form-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+
+    input#submit-button {
+        align-self: flex-end;
+    }
+
+    .form-row.single-column {
+        grid-template-columns: 1fr;
+    }
 }
