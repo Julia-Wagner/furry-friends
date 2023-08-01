@@ -27,11 +27,6 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
-/* push footer to bottom of the page */
-main {
-    flex-grow: 1;
-}
-
 h1,
 h2,
 h3 {
@@ -349,6 +344,9 @@ nav li {
 /* Main content */
 main {
     padding: 2rem 0;
+    flex-grow: 1;
+    max-width: 1800px;
+    margin: auto;
 }
 
 main a {
@@ -519,5 +517,40 @@ input#submit-button:hover {
 
     .form-row.single-column {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Found a Friend content */
+section.gallery {
+    display: grid;
+    margin: 2rem;
+}
+
+.gallery img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery-image {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+}
+
+/* tablet found a friend */
+@media screen and (min-width: 700px) {
+    section.gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery-image.col-span-2 {
+        grid-column: span 2;
+    }
+}
+
+/* desktop found a friend */
+@media screen and (min-width: 1000px) {
+    section.gallery {
+        grid-template-columns: 22% 22% 28% 28%;
     }
 }
