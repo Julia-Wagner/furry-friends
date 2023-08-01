@@ -424,3 +424,40 @@ article.dog-card {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+/* Contact content */
+.application-container {
+    padding: 1rem 2rem;
+}
+
+.form-input label {
+    display: block;
+    margin-top: 1rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+
+.form-input label.required:after {
+    content: ' *';
+    color: var(--lightgreen);
+}
+
+.form-input input,
+.form-input textarea {
+    width: 100%;
+    padding: 0.6rem  0.8rem;
+    margin: 0.5rem 0;
+    box-shadow: 3px 3px 15px 3px rgba(0,0,0,0.2);
+    border: 0;
+}
+
+input#submit-button {
+    background: var(--white);
+    color: var(--darkgreen);
+    padding: 0.7rem 2rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid var(--darkgreen);
+    margin-top: 1.5rem;
+}

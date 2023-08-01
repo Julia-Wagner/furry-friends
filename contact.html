@@ -32,8 +32,9 @@
                 <li><a href="dogs.html" class="nav-button nav-link">Our Dogs</a></li>
                 <li><a href="contact.html" class="nav-button nav-link active">Contact</a></li>
                 <li><a href="friend.html" class="nav-button nav-link">Found a friend</a></li>
-                <li><a href="https://www.paypal.com/donate/buttons/partner"
-                    class="nav-button cta-button" target="_blank" rel="noopener" aria-label="open PayPal donations link in new tab">Donate</a></li>
+                <li><a href="https://www.paypal.com/donate/buttons/partner" class="nav-button cta-button"
+                        target="_blank" rel="noopener" aria-label="open PayPal donations link in new tab">Donate</a>
+                </li>
             </ul>
         </nav>
         <label for="nav-burger" class="nav-burger-label">
@@ -48,7 +49,55 @@
     </section>
 
     <!-- Main content -->
-    <main></main>
+    <main>
+        <section class="heading">
+            <h2>Application form</h2>
+            <p>If you are interested in one of <a href="dogs.html">our dogs</a> you can apply for them here. Fill in all
+                the details and let us know any additional information that might be important. We will get back to you
+                as soon as possible.</p>
+        </section>
+        <section class="application-container">
+            <form action="" method="get" class="application-form">
+                <div class="form-row">
+                    <div class="form-input">
+                        <label for="fname" class="required">First name:</label>
+                        <input type="text" id="fname" name="first_name" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="lname" class="required">Last name:</label>
+                        <input type="text" id="lname" name="last_name" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-input">
+                        <label for="email" class="required">Mail address:</label>
+                        <input type="email" id="email" name="email_address" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="phone">Phone number:</label>
+                        <input type="tel" id="phone" name="phone_number">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-input">
+                        <label for="apply">Apply for:</label>
+                        <input type="text" id="apply" name="apply_for">
+                    </div>
+                    <div class="form-input">
+                        <label for="date">Earliest adoption date:</label>
+                        <input type="date" id="date" name="adoption_date">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-input">
+                        <label for="info">Additional information:</label>
+                        <textarea id="info" name="additional_information" rows="5" placeholder="Add any additional information that might be relevant"></textarea>
+                    </div>
+                </div>
+                <input type="submit" id="submit-button" value="Apply">
+            </form>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
@@ -56,8 +105,10 @@
             <section class="footer-hours">
                 <h3 class="footer-heading">Opening hours</h3>
                 <p>11am-7pm Mon-Fri & Sun
-                <br>9am-7pm Saturday</p>
-                <p class="address"><i class="footer-icon fa-solid fa-location-dot fa-xl"></i> 199 Dog Street, 5555 Dog</p>
+                    <br>9am-7pm Saturday
+                </p>
+                <p class="address"><i class="footer-icon fa-solid fa-location-dot fa-xl"></i> 199 Dog Street, 5555 Dog
+                </p>
             </section>
             <!-- screenshot for MVP -->
             <figure><img src="assets/docs/screenshots/maps.png" alt="Google Maps location"></figure>
@@ -68,12 +119,17 @@
                     <li><a href="friend.html" class="footer-link">Found a friend</a></li>
                 </ul>
                 <div class="social-links">
-                    <a href="https://www.facebook.com/" class="footer-link" target="_blank" rel="noopener" aria-label="open Furry Friends Shelter Facebook Page in new tab"><i class="fa-brands fa-facebook fa-xl"></i></a>
-                    <a href="https://instagram.com/" class="footer-link" target="_blank" rel="noopener" aria-label="open Furry Friends Shelter Instagram Page in new tab"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                    <a href="https://www.facebook.com/" class="footer-link" target="_blank" rel="noopener"
+                        aria-label="open Furry Friends Shelter Facebook Page in new tab"><i
+                            class="fa-brands fa-facebook fa-xl"></i></a>
+                    <a href="https://instagram.com/" class="footer-link" target="_blank" rel="noopener"
+                        aria-label="open Furry Friends Shelter Instagram Page in new tab"><i
+                            class="fa-brands fa-instagram fa-xl"></i></a>
                 </div>
             </section>
         </div>
-        <p class="copyright">© 2023 Julia Wagner - This website was made for educational purposes only, images taken from <a href="https://unsplash.com/" target="_blank">unsplash.com</a></p>
+        <p class="copyright">© 2023 Julia Wagner - This website was made for educational purposes only, images taken
+            from <a href="https://unsplash.com/" target="_blank">unsplash.com</a></p>
     </footer>
 </body>
 
