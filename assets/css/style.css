@@ -531,6 +531,12 @@ section.gallery {
     object-fit: cover;
 }
 
+.gallery iframe {
+    width: 100%;
+    border: none;
+    min-height: 300px;
+}
+
 .gallery-image {
     display: flex;
     justify-content: center;
@@ -551,6 +557,6 @@ section.gallery {
 /* desktop found a friend */
 @media screen and (min-width: 1000px) {
     section.gallery {
-        grid-template-columns: 22% 22% 28% 28%;
+        grid-template-columns: 24% 24% 26% 26%;
     }
 }
