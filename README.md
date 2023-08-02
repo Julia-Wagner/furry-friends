@@ -88,9 +88,28 @@ At the bottom of the footer, I have the copyright information. This includes the
 
 In order to create an MVP without JavaScript I only included a screenshot of Google Maps. To further improve the website after this course I would use the [Google Maps API](https://developers.google.com/maps) to add a usable map to the footer.
 
-On bigger screen sizes the footer is organized in three columns using CSS grid. On smaller screens the elements are presented in one column.
+On bigger screen sizes the footer is organized in three columns using CSS grid. On smaller screens, the elements are presented in one column.
 
 ![Mobile Footer](assets/docs/screenshots/footer_mobile.png)
+
+### **Our Dogs Page**
+After a heading and some information about the adoption process, all the dogs available for adoption are presented on this page. Each dog is presented as a card with a picture of the dog, their name, facts about them and a short description of their character. 
+
+For the fictional shelter, I created eight dogs available for adoption. On big screen sizes, they are presented in three columns, on smaller sizes there are two columns and for mobile sizes one column.
+
+![Our Dogs Page](assets/docs/screenshots/our_dogs.png)
+
+### **Contact Page**
+On the Contact page, the website user finds an application form to apply for one of the shelter´s dogs. The user has to fill out their contact details (required fields are clearly shown with a *) and can give additional information.
+
+![Our Dogs Page](assets/docs/screenshots/contact.png)
+
+### **Found a Friend Page**
+The Found a Friend page shows a gallery of former shelter dogs with their new owners. A video is also included in the gallery. Autoplay is turned off for the video to enhance UX. As the shelter is fictional I used a [placeholder video from YouTube](https://www.youtube.com/watch?v=B7yOO4oKMVc&source_ve_path=OTY3MTQ&feature=emb_imp_woyt) that shows a dog being adopted. 
+
+To display the gallery I used CSS grid with column-spans for horizontal content.
+
+![Our Dogs Page](assets/docs/screenshots/found_a_friend.png)
 
 ## **Deployment**
 I followed my mentor's tip and deployed my website early, after implementing the header. The steps to deploying a website on GitHub pages are:
