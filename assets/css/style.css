@@ -132,8 +132,308 @@ nav li {
     transition: opacity 250ms ease-in-out 250ms;
 }
 
-/* desktop menu */
+/* hero */
+.hero-container {
+    margin-top: 8rem;
+    position: relative;
+}
+
+.hero-image {
+    height: 75vh;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, .5);
+    background-blend-mode: overlay;
+}
+
+.hero-smaller .hero-image {
+    height: 35vh;
+}
+
+.hero-image.home {
+    background-image: url(../images/hero_home.jpg);
+}
+
+.hero-image.dogs {
+    background-image: url(../images/hero_dogs.jpg);
+}
+
+.hero-image.contact {
+    background-image: url(../images/hero_contact.jpg);
+}
+
+.hero-image.friend {
+    background-image: url(../images/hero_friend.jpg);
+}
+
+.hero-text {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+    margin-bottom: 0.7rem;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    width: 60vw;
+    margin: auto;
+}
+
+.hero-button.cta-button {
+    margin-top: 8rem;
+    font-size: 1.2rem;
+}
+
+.hero-smaller .hero-text {
+    top: 35%;
+}
+
+/* footer */
+.footer {
+    bottom: 0;
+}
+
+.footer-container {
+    text-align: center;
+    padding: 2rem 0;
+    background: var(--darkgreen);
+    color: var(--white);
+    font-size: 1.1rem;
+}
+
+.footer-container h3 {
+    font-size: 1.5rem;
+}
+
+.footer-container img {
+    max-width: 100%;
+    margin: 2rem 0;
+}
+
+.footer-links ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-links li {
+    margin: 1rem 0;
+}
+
+.footer-link {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.copyright {
+    text-align: center;
+    background: var(--beige);
+    color: var(--black);
+    margin: 0;
+    padding: .5rem 0;
+}
+
+.copyright a {
+    color: var(--darkgreen);
+}
+
+/* Main content */
+main {
+    padding: 2rem 0;
+    flex-grow: 1;
+    max-width: 1800px;
+    margin: auto;
+}
+
+main a {
+    color: var(--darkgreen);
+}
+
+main a:hover {
+    color: var(--lightgreen);
+}
+
+section.heading {
+    max-width: 70%;
+    margin: auto;
+}
+
+section.heading h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Our Dogs Content */
+section.dog-cards {
+    display: grid;
+}
+
+.dog-card figure {
+    margin: 0;
+}
+
+article.dog-card {
+    width: 90%;
+    margin: 1rem auto;
+    border: 4px solid var(--lightgreen);
+    box-shadow: 3px 5px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.dog-card img {
+    max-width: 100%;
+    height: 16rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+}
+
+.dog-card figcaption {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    background: var(--beige);
+}
+
+.dog-card .dog-infos {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.dog-card p {
+    margin: 0;
+    padding: 0 1rem 1rem 1rem;
+}
+
+/* Contact content */
+.application-container {
+    max-width: 80%;
+    margin: 1rem auto;
+}
+
+.form-input label {
+    display: block;
+    margin-top: 1rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+
+.form-input label.required:after {
+    content: ' *';
+    color: var(--lightgreen);
+}
+
+.form-input input,
+.form-input textarea {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    margin: 0.5rem 0;
+    box-shadow: 3px 3px 15px 3px rgba(0, 0, 0, 0.2);
+    border: 0;
+}
+
+/* change font-family for input text placeholder in all browsers */
+.form-input input,
+.form-input input::-webkit-input-placeholder,
+.form-input textarea::-webkit-input-placeholder {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.form-input input:-ms-input-placeholder,
+.form-input textarea:-ms-input-placeholder {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.form-input input:-moz-placeholder,
+.form-input textarea:-moz-placeholder {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.form-input input::-moz-placeholder,
+.form-input textarea::-moz-placeholder {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.form-input textarea {
+    resize: vertical;
+}
+
+form.application-form {
+    display: flex;
+    flex-direction: column;
+}
+
+input#submit-button {
+    background: var(--white);
+    color: var(--darkgreen);
+    padding: 0.7rem 3rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid var(--darkgreen);
+    margin-top: 1.5rem;
+}
+
+input#submit-button:hover {
+    cursor: pointer;
+    background: var(--darkgreen);
+    color: var(--white);
+}
+
+/* Found a Friend content */
+section.gallery {
+    display: grid;
+    margin: 2rem;
+}
+
+.gallery img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery iframe {
+    width: 100%;
+    border: none;
+    min-height: 300px;
+}
+
+.gallery-image {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+}
+
+
+/* media queries */
+
+/* mobile logo size */
+@media screen and (max-width: 500px) {
+    header {
+        padding: 0.5rem 2rem;
+    }
+
+    .header-logo img {
+        height: 5rem;
+    }
+
+    .hero-container {
+        margin-top: 6rem;
+    }
+}
+
+/* desktop queries */
 @media screen and (min-width: 900px) {
+
+    /* desktop menu */
     .nav-burger-label {
         display: none;
     }
@@ -199,71 +499,8 @@ nav li {
     .nav-button.active::before {
         transform: scale(1, 1);
     }
-}
 
-/* hero */
-.hero-container {
-    margin-top: 8rem;
-    position: relative;
-}
-
-.hero-image {
-    height: 75vh;
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(255, 255, 255, .5);
-    background-blend-mode: overlay;
-}
-
-.hero-smaller .hero-image {
-    height: 35vh;
-}
-
-.hero-image.home {
-    background-image: url(../images/hero_home.jpg);
-}
-
-.hero-image.dogs {
-    background-image: url(../images/hero_dogs.jpg);
-}
-
-.hero-image.contact {
-    background-image: url(../images/hero_contact.jpg);
-}
-
-.hero-image.friend {
-    background-image: url(../images/hero_friend.jpg);
-}
-
-.hero-text {
-    position: absolute;
-    top: 15%;
-    width: 100%;
-    text-align: center;
-}
-
-.hero-text h1 {
-    font-size: 2rem;
-    margin-bottom: 0.7rem;
-}
-
-.hero-text p {
-    font-size: 1.5rem;
-    width: 60vw;
-    margin: auto;
-}
-
-.hero-button.cta-button {
-    margin-top: 8rem;
-    font-size: 1.2rem;
-}
-
-.hero-smaller .hero-text {
-    top: 35%;
-}
-
-/* desktop hero */
-@media screen and (min-width: 900px) {
+    /* desktop hero */
     .hero-text {
         top: 10%
     }
@@ -280,59 +517,8 @@ nav li {
         margin-top: 3rem;
         font-size: 1.5rem;
     }
-}
 
-/* footer */
-.footer {
-    bottom: 0;
-}
-
-.footer-container {
-    text-align: center;
-    padding: 2rem 0;
-    background: var(--darkgreen);
-    color: var(--white);
-    font-size: 1.1rem;
-}
-
-.footer-container h3 {
-    font-size: 1.5rem;
-}
-
-.footer-container img {
-    max-width: 100%;
-    margin: 2rem 0;
-}
-
-.footer-links ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.footer-links li {
-    margin: 1rem 0;
-}
-
-.footer-link {
-    color: var(--white);
-    text-decoration: none;
-}
-
-.copyright {
-    text-align: center;
-    background: var(--beige);
-    color: var(--black);
-    margin: 0;
-    padding: .5rem 0;
-}
-
-.copyright a {
-    color: var(--darkgreen);
-}
-
-/* desktop footer */
-@media screen and (min-width: 900px) {
+    /* desktop footer */
     .footer-container {
         display: grid;
         align-items: center;
@@ -341,170 +527,16 @@ nav li {
     }
 }
 
-/* Main content */
-main {
-    padding: 2rem 0;
-    flex-grow: 1;
-    max-width: 1800px;
-    margin: auto;
-}
-
-main a {
-    color: var(--darkgreen);
-}
-
-main a:hover {
-    color: var(--lightgreen);
-}
-
-section.heading {
-    max-width: 70%;
-    margin: auto;
-}
-
-section.heading h2 {
-    font-size: 2rem;
-    text-align: center;
-}
-
-/* Our Dogs Content */
-section.dog-cards {
-    display: grid;
-}
-
-.dog-card figure {
-    margin: 0;
-}
-
-article.dog-card {
-    width: 90%;
-    margin: 1rem auto;
-    border: 4px solid var(--lightgreen);
-    box-shadow: 3px 5px 10px 2px rgba(0,0,0,0.2);
-}
-
-.dog-card img {
-    max-width: 100%;
-    height: 16rem;
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
-    display: block;
-}
-
-.dog-card figcaption {
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.5rem;
-    padding: 0.5rem 0;
-    background: var(--beige);
-}
-
-.dog-card .dog-infos {
-    display: block;
-    text-align: center;
-    font-weight: bold;
-    margin: 0.5rem 0;
-}
-
-.dog-card p {
-    margin: 0;
-    padding: 0 1rem 1rem 1rem;
-}
-
-/* tablet our dogs */
+/* tablet queries */
 @media screen and (min-width: 700px) {
+
+    /* tablet our dogs */
     section.dog-cards {
         grid-template-columns: repeat(2, 1fr);
         margin: 2rem;
     }
-}
 
-/* desktop our dogs */
-@media screen and (min-width: 1000px) {
-    section.dog-cards {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-/* Contact content */
-.application-container {
-    max-width: 80%;
-    margin: 1rem auto;
-}
-
-.form-input label {
-    display: block;
-    margin-top: 1rem;
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold;
-}
-
-.form-input label.required:after {
-    content: ' *';
-    color: var(--lightgreen);
-}
-
-.form-input input,
-.form-input textarea {
-    width: 100%;
-    padding: 0.6rem  0.8rem;
-    margin: 0.5rem 0;
-    box-shadow: 3px 3px 15px 3px rgba(0,0,0,0.2);
-    border: 0;
-}
-
-/* change font-family for input text placeholder in all browsers */
-.form-input input, 
-.form-input input::-webkit-input-placeholder, 
-.form-input textarea::-webkit-input-placeholder {
-    font-family: 'PT Sans', sans-serif;
-}
-
-.form-input input:-ms-input-placeholder, 
-.form-input textarea:-ms-input-placeholder {
-    font-family: 'PT Sans', sans-serif;
-}
-
-.form-input input:-moz-placeholder, 
-.form-input textarea:-moz-placeholder {
-    font-family: 'PT Sans', sans-serif;
-}
-
-.form-input input::-moz-placeholder, 
-.form-input textarea::-moz-placeholder {
-    font-family: 'PT Sans', sans-serif;
-}
-
-.form-input textarea {
-    resize: vertical;
-}
-
-form.application-form {
-    display: flex;
-    flex-direction: column;
-}
-
-input#submit-button {
-    background: var(--white);
-    color: var(--darkgreen);
-    padding: 0.7rem 3rem;
-    border-radius: 2rem;
-    font-size: 1rem;
-    font-weight: bold;
-    border: 2px solid var(--darkgreen);
-    margin-top: 1.5rem;
-}
-
-input#submit-button:hover {
-    cursor: pointer;
-    background: var(--darkgreen);
-    color: var(--white);
-}
-
-/* tablet and desktop contact */
-@media screen and (min-width: 700px) {
+    /* tablet and desktop contact */
     .form-row {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -518,33 +550,8 @@ input#submit-button:hover {
     .form-row.single-column {
         grid-template-columns: 1fr;
     }
-}
 
-/* Found a Friend content */
-section.gallery {
-    display: grid;
-    margin: 2rem;
-}
-
-.gallery img {
-    width: 100%;
-    object-fit: cover;
-}
-
-.gallery iframe {
-    width: 100%;
-    border: none;
-    min-height: 300px;
-}
-
-.gallery-image {
-    display: flex;
-    justify-content: center;
-    margin: 0.5rem;
-}
-
-/* tablet found a friend */
-@media screen and (min-width: 700px) {
+    /* tablet found a friend */
     section.gallery {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -554,8 +561,15 @@ section.gallery {
     }
 }
 
-/* desktop found a friend */
+/* bigger desktop queries */
 @media screen and (min-width: 1000px) {
+
+    /* desktop our dogs */
+    section.dog-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* desktop found a friend */
     section.gallery {
         grid-template-columns: 24% 24% 26% 26%;
     }
