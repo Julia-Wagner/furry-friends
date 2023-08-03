@@ -24,7 +24,6 @@
 body {
     margin: 0;
     padding: 0;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     color: var(--black);
@@ -262,8 +261,6 @@ footer {
 main {
     padding: 2rem 0;
     flex-grow: 1;
-    max-width: 1600px;
-    margin: auto;
 }
 
 main a {
@@ -274,9 +271,14 @@ main a:hover {
     color: var(--lightgreen);
 }
 
-section.heading {
-    max-width: 70%;
+.container {
+    max-width: 1600px;
     margin: auto;
+}
+
+section.heading {
+    padding: 2rem;
+    text-align: center;
 }
 
 section.heading h2 {
@@ -293,7 +295,7 @@ section.heading h2 {
 }
 
 section.help-container {
-    margin: 3rem 1rem;
+    padding: 3rem 1rem;
 }
 
 .help-text {
@@ -393,8 +395,7 @@ article.dog-card {
    Contact page styles
    ========================================================================== */
 .application-container {
-    max-width: 80%;
-    margin: 1rem auto;
+    padding: 2rem;
 }
 
 .form-input label {
@@ -471,7 +472,7 @@ input#submit-button:hover {
    ========================================================================== */
 section.gallery {
     display: grid;
-    margin: 2rem;
+    padding: 1rem;
 }
 
 .gallery img {
@@ -605,11 +606,6 @@ section.gallery {
         padding: 0;
     }
 
-    /*desktop home page*/
-    section.counter-container {
-        width: 100vw;
-    }
-
     .counter-content {
         flex-direction: row;
         justify-content: space-evenly;
@@ -623,7 +619,7 @@ section.gallery {
     /* tablet our dogs */
     section.dog-cards {
         grid-template-columns: repeat(2, 1fr);
-        margin: 2rem;
+        padding: 2rem;
     }
 
     /* tablet and desktop contact */
@@ -644,6 +640,7 @@ section.gallery {
     /* tablet found a friend */
     section.gallery {
         grid-template-columns: repeat(3, 1fr);
+        padding: 2rem;
     }
 
     .gallery-image.col-span-2 {
@@ -662,12 +659,5 @@ section.gallery {
     /* desktop found a friend */
     section.gallery {
         grid-template-columns: 24% 24% 26% 26%;
-    }
-}
-
-/* screen bigger than main container */
-@media screen and (min-width: 1600px) {
-    section.counter-container {
-        margin-left: calc(0px - ((100vw - 1600px)/2));
     }
 }
