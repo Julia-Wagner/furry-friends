@@ -206,16 +206,19 @@ nav li {
 /* ==========================================================================
    Footer styles
    ========================================================================== */
-.footer {
+footer {
     bottom: 0;
+    width: 100%;
+    background: var(--darkgreen);
+    color: var(--white);
 }
 
 .footer-container {
     text-align: center;
     padding: 2rem 0;
-    background: var(--darkgreen);
-    color: var(--white);
     font-size: 1.1rem;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .footer-container h3 {
@@ -259,7 +262,7 @@ nav li {
 main {
     padding: 2rem 0;
     flex-grow: 1;
-    max-width: 1800px;
+    max-width: 1600px;
     margin: auto;
 }
 
@@ -295,7 +298,7 @@ section.help-container {
 
 .help-text {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     border: 5px solid var(--lightgreen);
     padding: 0 1.5rem 1.5rem 1.5rem;
     margin-top: 0.5rem;
@@ -314,9 +317,14 @@ section.help-container {
 section.counter-container {
     padding: 3rem 0;
     background: var(--beige);
+}
+
+.counter-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 span.counter-number {
@@ -596,6 +604,17 @@ section.gallery {
         grid-template-columns: repeat(3, 1fr);
         padding: 0;
     }
+
+    /*desktop home page*/
+    section.counter-container {
+        width: 100vw;
+    }
+
+    .counter-content {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
 }
 
 /* tablet queries */
@@ -643,5 +662,12 @@ section.gallery {
     /* desktop found a friend */
     section.gallery {
         grid-template-columns: 24% 24% 26% 26%;
+    }
+}
+
+/* screen bigger than main container */
+@media screen and (min-width: 1600px) {
+    section.counter-container {
+        margin-left: calc(0px - ((100vw - 1600px)/2));
     }
 }
