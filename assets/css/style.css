@@ -1,3 +1,7 @@
+/* ==========================================================================
+   General styles
+   ========================================================================== */
+
 /* Google fonts import Nunito and PT Sans */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
@@ -33,7 +37,13 @@ h3 {
     font-family: 'Nunito', sans-serif;
 }
 
-/* header styles */
+img {
+    max-width: 100%;
+}
+
+/* ==========================================================================
+   Header styles
+   ========================================================================== */
 /* mobile hamburger menu, inspiration from Kevin Powell https://codepen.io/kevinpowell/pen/jxppmr */
 header {
     background: var(--lightgreen);
@@ -193,7 +203,9 @@ nav li {
     top: 35%;
 }
 
-/* footer */
+/* ==========================================================================
+   Footer styles
+   ========================================================================== */
 .footer {
     bottom: 0;
 }
@@ -211,7 +223,6 @@ nav li {
 }
 
 .footer-container img {
-    max-width: 100%;
     margin: 2rem 0;
 }
 
@@ -242,7 +253,9 @@ nav li {
     color: var(--darkgreen);
 }
 
-/* Main content */
+/* ==========================================================================
+   Main content styles
+   ========================================================================== */
 main {
     padding: 2rem 0;
     flex-grow: 1;
@@ -268,7 +281,62 @@ section.heading h2 {
     text-align: center;
 }
 
-/* Our Dogs Content */
+/* ==========================================================================
+   Home page styles
+   ========================================================================== */
+/* help banner */
+.help-container figure {
+    margin: 0;
+}
+
+section.help-container {
+    margin: 3rem 1rem;
+}
+
+.help-text {
+    display: flex;
+    flex-direction: column;    
+    border: 5px solid var(--lightgreen);
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.help-button {
+    text-align: center;
+}
+
+.help-heading {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+}
+
+/* counter */
+section.counter-container {
+    padding: 3rem 0;
+    background: var(--beige);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span.counter-number {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+/* ==========================================================================
+   Our Dogs page styles
+   ========================================================================== */
 section.dog-cards {
     display: grid;
 }
@@ -285,7 +353,6 @@ article.dog-card {
 }
 
 .dog-card img {
-    max-width: 100%;
     height: 16rem;
     width: 100%;
     object-fit: cover;
@@ -314,7 +381,9 @@ article.dog-card {
     padding: 0 1rem 1rem 1rem;
 }
 
-/* Contact content */
+/* ==========================================================================
+   Contact page styles
+   ========================================================================== */
 .application-container {
     max-width: 80%;
     margin: 1rem auto;
@@ -389,7 +458,9 @@ input#submit-button:hover {
     color: var(--white);
 }
 
-/* Found a Friend content */
+/* ==========================================================================
+   Found a Friend page styles
+   ========================================================================== */
 section.gallery {
     display: grid;
     margin: 2rem;
@@ -412,9 +483,9 @@ section.gallery {
     margin: 0.5rem;
 }
 
-
-/* media queries */
-
+/* ==========================================================================
+   Media queries
+   ========================================================================== */
 /* mobile logo size */
 @media screen and (max-width: 500px) {
     header {
