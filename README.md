@@ -111,6 +111,17 @@ To display the gallery I used CSS grid with column-spans for horizontal content.
 
 ![Our Dogs Page](assets/docs/screenshots/found_a_friend.png)
 
+## **Testing**
+
+### **Issues**
+While coding some issues kept me thinking for longer than others. Below is a list of issues that took me a while to fix.
+
+1. Having a full with counter section on the Home page.
+    - The issue I found while adapting the counter section to desktop screen sizes was that it wasn´t full width on bigger screens.
+    ![Issue with counter section](assets/docs/screenshots/issue_counter.png)
+    - This issue appeared because I limited the width of my `main` to `1600px`. I tried fixing this by using `position: absolute;`. However, this led me to another problem as it removed the element from the document flow. So I decided to use `width: 100vw` instead. To then move it to the left side of the screen without positioning it I used a negative margin with `calc()` to calculate it.
+    ![Issue with counter section](assets/docs/screenshots/issue_counter_fixed.png)
+
 ## **Deployment**
 I followed my mentor's tip and deployed my website early, after implementing the header. The steps to deploying a website on GitHub pages are:
 1. Open the [repository](https://github.com/Julia-Wagner/furry-friends) and go to the **Settings** tab.
