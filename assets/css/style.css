@@ -122,6 +122,7 @@ nav li {
     border-radius: 2rem;
     text-decoration: none;
     padding: 0.6rem 2rem;
+    font-weight: bold;
 }
 
 .cta-button:hover {
@@ -495,20 +496,13 @@ form.application-form {
 }
 
 input#submit-button {
-    background: var(--white);
-    color: var(--darkgreen);
     padding: 0.7rem 3rem;
-    border-radius: 2rem;
     font-size: 1rem;
-    font-weight: bold;
-    border: 2px solid var(--darkgreen);
     margin-top: 1.5rem;
 }
 
 input#submit-button:hover {
     cursor: pointer;
-    background: var(--darkgreen);
-    color: var(--white);
 }
 
 /* ==========================================================================
