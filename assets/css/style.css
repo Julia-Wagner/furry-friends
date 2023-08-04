@@ -303,8 +303,10 @@ section.help-container {
     display: flex;
     flex-direction: column;
     border: 5px solid var(--lightgreen);
-    padding: 0 1.5rem 1.5rem 1.5rem;
+    padding: 1.5rem;
     margin-top: 0.5rem;
+    border-radius: 2rem;    
+    box-shadow: 3px 5px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
 .help-button {
@@ -316,11 +318,15 @@ section.help-container {
     font-size: 1.5rem;
 }
 
+.help-image img {
+    border-radius: 2rem;
+}
+
 /* counter */
 section.counter-container {
     padding: 3rem 0;
     background: var(--beige);
-    margin-top: 3rem;
+    margin: 3rem 0;
 }
 
 .counter-content {
@@ -346,6 +352,38 @@ span.counter-number {
     text-align: center;
 }
 
+/* image links */
+section.image-links.container {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.background-image.find-friend {
+    background-image: url(../images/home_find.jpg);
+}
+
+.background-image.make-donation {
+    background-image: url(../images/home_donation.jpg);
+}
+
+.background-image {
+    width: 100%;
+    height: 25rem;
+    background-size: cover;
+    margin: 1rem;
+    background-position: center;
+    background-color: rgba(255, 255, 255, .4);
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 3px 5px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
 /* ==========================================================================
    Our Dogs page styles
    ========================================================================== */
@@ -362,6 +400,7 @@ article.dog-card {
     margin: 1rem auto;
     border: 4px solid var(--lightgreen);
     box-shadow: 3px 5px 10px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 2.3rem;
 }
 
 .dog-card img {
@@ -370,6 +409,8 @@ article.dog-card {
     object-fit: cover;
     object-position: top;
     display: block;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
 }
 
 .dog-card figcaption {
@@ -419,6 +460,7 @@ article.dog-card {
     margin: 0.5rem 0;
     box-shadow: 3px 3px 15px 3px rgba(0, 0, 0, 0.2);
     border: 0;
+    border-radius: 2rem;
 }
 
 /* change font-family for input text placeholder in all browsers */
@@ -642,7 +684,6 @@ section.gallery {
         grid-row: 2 / 4;
         background: #fff;
         height: fit-content;
-        padding: 3rem 2.5rem;
     }
 
     .help-button {
@@ -651,6 +692,10 @@ section.gallery {
 
     .help-heading {
         font-size: 1.7rem;
+    }
+
+    section.image-links.container {
+        flex-direction: row;
     }
 }
 
