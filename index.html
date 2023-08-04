@@ -23,15 +23,15 @@
 <body>
     <!-- Header -->
     <header>
-        <a href="index.html" class="header-logo">
+        <a href="index.html" class="header-logo" aria-label="link to Home page">
             <img src="assets/images/logo.png" alt="Furry Friends Shelter Logo links to homepage">
         </a>
         <input type="checkbox" id="nav-burger" class="nav-burger">
         <nav>
             <ul class="nav-wrapper">
-                <li><a href="dogs.html" class="nav-button nav-link">Our Dogs</a></li>
-                <li><a href="contact.html" class="nav-button nav-link">Contact</a></li>
-                <li><a href="friend.html" class="nav-button nav-link">Found a friend</a></li>
+                <li><a href="dogs.html" class="nav-button nav-link" aria-label="link to Our Dogs page">Our Dogs</a></li>
+                <li><a href="contact.html" class="nav-button nav-link" aria-label="link to Contact page">Contact</a></li>
+                <li><a href="friend.html" class="nav-button nav-link" aria-label="link to Found a friend page">Found a friend</a></li>
                 <li><a href="https://www.paypal.com/donate/buttons/partner" class="nav-button cta-button"
                         target="_blank" rel="noopener" aria-label="open PayPal donations link in new tab">Donate</a>
                 </li>
@@ -46,7 +46,7 @@
         <div class="hero-text">
             <h1>Furry Friends Shelter</h1>
             <p>Find your new best friend today</p>
-            <a href="dogs.html" class="hero-button cta-button">Our Dogs</a>
+            <a href="dogs.html" class="hero-button cta-button" aria-label="link to Our Dogs page">Our Dogs</a>
         </div>
     </section>
 
@@ -88,8 +88,13 @@
             </div>
         </section>
         <section class="image-links container">
-            <div></div>
-            <div></div>
+            <div class="background-image find-friend">
+                <a href="dogs.html" class="image-link" aria-label="link to Our Dogs page">Find your furry friend</a>
+            </div>
+            <div class="background-image make-donation">
+                <a href="https://www.paypal.com/donate/buttons/partner" class="image-link"
+                        target="_blank" rel="noopener" aria-label="open PayPal donations link in new tab">Make a donation</a>
+            </div>
         </section>
     </main>
 
@@ -108,9 +113,9 @@
             <figure><img src="assets/docs/screenshots/maps.png" alt="Google Maps location"></figure>
             <section class="footer-links">
                 <ul>
-                    <li><a href="dogs.html" class="footer-link">Our Dogs</a></li>
-                    <li><a href="contact.html" class="footer-link">Contact</a></li>
-                    <li><a href="friend.html" class="footer-link">Found a friend</a></li>
+                    <li><a href="dogs.html" class="footer-link" aria-label="link to Our Dogs page">Our Dogs</a></li>
+                    <li><a href="contact.html" class="footer-link" aria-label="link to Contact page">Contact</a></li>
+                    <li><a href="friend.html" class="footer-link" aria-label="link to Found a friend page">Found a friend</a></li>
                 </ul>
                 <div class="social-links">
                     <a href="https://www.facebook.com/" class="footer-link" target="_blank" rel="noopener"
@@ -123,7 +128,7 @@
             </section>
         </div>
         <p class="copyright">© 2023 Julia Wagner - This website was made for educational purposes only, images taken
-            from <a href="https://unsplash.com/" target="_blank">unsplash.com</a></p>
+            from <a href="https://unsplash.com/" target="_blank" rel="noopener" aria-label="open Unsplash in new tab">unsplash.com</a></p>
     </footer>
 </body>
 
