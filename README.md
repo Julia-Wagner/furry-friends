@@ -69,6 +69,7 @@ After choosing my colors and fonts I wanted to make a simple Logo for my website
 
 ### **Header**
 To follow my mobile-first approach I started by looking at tutorials on how to implement a hamburger menu without JS. I found a video with the according [Codepen](https://codepen.io/kevinpowell/pen/jxppmr) from Kevin Powell. I used the information from the video and example code in the Codepen for my navigation.
+To improve accessibility I added **Menu** as a text alternative and used `aria-hidden` on the hamburger icon.
 
 ![Mobile Header](assets/docs/screenshots/header_mobile.png)
 

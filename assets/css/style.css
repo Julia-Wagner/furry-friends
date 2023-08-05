@@ -44,7 +44,14 @@ img {
 /* ==========================================================================
    Header styles
    ========================================================================== */
-/* mobile hamburger menu, inspiration from Kevin Powell https://codepen.io/kevinpowell/pen/jxppmr */
+.header-logo img {
+    height: 6rem;
+}
+
+/* mobile hamburger menu */
+/**
+* start of code adapted from Kevin Powell https://codepen.io/kevinpowell/pen/jxppmr
+*/
 header {
     background: var(--lightgreen);
     position: fixed;
@@ -52,10 +59,6 @@ header {
     z-index: 99;
     padding: 1rem 2rem;
     top: 0;
-}
-
-.header-logo img {
-    height: 6rem;
 }
 
 .nav-burger {
@@ -114,6 +117,26 @@ nav li {
     color: var(--darkgreen);
 }
 
+.nav-burger:checked~nav {
+    transform: scale(1, 1);
+}
+
+.nav-burger:checked~nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+/**
+* end of code adapted from Kevin Powell https://codepen.io/kevinpowell/pen/jxppmr
+*/
+
+.nav-burger-label span {
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: 'Nunito', sans-serif;
+    margin-right: 0.7rem;
+}
+
 .cta-button {
     border: 2px solid var(--darkgreen);
     background: var(--darkgreen);
@@ -132,15 +155,6 @@ nav li {
 
 .nav-button.cta-button {
     margin: .5rem 0 2rem 0;
-}
-
-.nav-burger:checked~nav {
-    transform: scale(1, 1);
-}
-
-.nav-burger:checked~nav a {
-    opacity: 1;
-    transition: opacity 250ms ease-in-out 250ms;
 }
 
 /* hero */
@@ -306,7 +320,7 @@ section.help-container {
     border: 5px solid var(--lightgreen);
     padding: 1.5rem;
     margin-top: 0.5rem;
-    border-radius: 2rem;    
+    border-radius: 2rem;
     box-shadow: 3px 5px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -563,6 +577,9 @@ section.gallery {
     }
 
     /* desktop menu */
+    /**
+    * start of code adapted from Kevin Powell https://codepen.io/kevinpowell/pen/jxppmr
+    */
     .nav-burger-label {
         display: none;
     }
@@ -604,10 +621,6 @@ section.gallery {
         position: relative;
     }
 
-    .nav-button.cta-button {
-        margin: 0;
-    }
-
     .nav-link::before {
         content: '';
         display: block;
@@ -627,6 +640,13 @@ section.gallery {
 
     .nav-button.active::before {
         transform: scale(1, 1);
+    }
+    /**
+    * end of code adapted from Kevin Powell https://codepen.io/kevinpowell/pen/jxppmr
+    */
+
+    .nav-button.cta-button {
+        margin: 0;
     }
 
     /* desktop hero */
