@@ -57,7 +57,7 @@ To create the color scheme I looked at various pictures of dogs I might use as h
 ![Color contrast](assets/docs/screenshots/color_contrast.png)
 
 ### **Fonts**
-I used [fontpair.co](https://www.fontpair.co/) to get some inspiration for possible Font Pairings. I wanted to use [Google Fonts](https://fonts.google.com/) and decided to use **Nunito** for my headings and **PT Sans** for my text. These two fonts seem to pair nicely and I like the rounded, playful shape of Nunito for the topic of this website.
+I used [fontpair.co](https://www.fontpair.co/) to get some inspiration for possible font pairings. I wanted to use [Google Fonts](https://fonts.google.com/) and decided to use **Nunito** for my headings and **PT Sans** for my text. These two fonts seem to pair nicely and I like the rounded, playful shape of Nunito for the topic of this website.
 
 ### **Logo and Images**
 After choosing my colors and fonts I wanted to make a simple Logo for my website, as the *Furry Friends Shelter* does not exist in the real world. I used my colors and fonts for the creation of the Logo. The paw prints I used are my own dogs' paws.
@@ -138,5 +138,12 @@ I followed my mentor's tip and deployed my website early, after implementing the
 The link to my live site is: [Furry Friends Shelter](https://julia-wagner.github.io/furry-friends/)
 
 ## **Credits**
-- The images used for the website are taken from [unsplash.com](https://unsplash.com/) and compressed using [tinypng.com](https://tinypng.com/). Some images of dogs are my own pictures.
+### **Content**
+- I adapted my hamburger menu from a video with the according [Codepen](https://codepen.io/kevinpowell/pen/jxppmr) from Kevin Powell. 
 - To test my website I signed up for a free trial on [BrowserStack](https://www.browserstack.com/).
+
+### **Media and Design**
+- The images used for the website are taken from [unsplash.com](https://unsplash.com/) and compressed using [tinypng.com](https://tinypng.com/). Some images of dogs are my own pictures.
+- I used [Balsamiq](https://balsamiq.com/) to create Wireframes.
+- With [coolors.co](https://coolors.co/) I created a color scheme and used [contrast-grid.eightshapes.com](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%2383a603%0D%0A%231b4001%0D%0A%23f0deb4%0D%0A%23f6f7eb%0D%0A%23001e1d&es-color-form__tile-size=regular&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) to check the contrast and possible color combinations.
+- [fontpair.co](https://www.fontpair.co/) was used to get inspiration for font pairings, the fonts were downloaded from [Google Fonts](https://fonts.google.com/).
