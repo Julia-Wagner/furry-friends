@@ -62,7 +62,7 @@ I used [fontpair.co](https://www.fontpair.co/) to get some inspiration for possi
 ### **Logo and Images**
 After choosing my colors and fonts I wanted to make a simple Logo for my website, as the *Furry Friends Shelter* does not exist in the real world. I used my colors and fonts for the creation of the Logo. The paw prints I used are my own dogs' paws.
 
-![Furry Friends Logo](assets/docs/screenshots/logo.png)
+![Furry Friends logo](assets/docs/screenshots/logo.png)
 
 
 ## **Features**
@@ -71,11 +71,11 @@ After choosing my colors and fonts I wanted to make a simple Logo for my website
 To follow my mobile-first approach I started by looking at tutorials on how to implement a hamburger menu without JS. I found a video with the according [Codepen](https://codepen.io/kevinpowell/pen/jxppmr) from Kevin Powell. I used the information from the video and example code in the Codepen for my navigation.
 To improve accessibility I added **Menu** as a text alternative and used `aria-hidden` on the hamburger icon.
 
-![Mobile Header](assets/docs/screenshots/header_mobile.png)
+![Mobile header](assets/docs/screenshots/header_mobile.png)
 
 The navigation header is sticky to improve UX. This way the user can easily navigate the website and click on another page from anywhere. The navigation links have a `:hover` effect that is also used for the active page, as shown in the screenshot below.
 
-![Dekstop Header](assets/docs/screenshots/header_desktop.png)
+![Dekstop header](assets/docs/screenshots/header_desktop.png)
 
 Below my navigation, I have a hero image on each page. On the homepage, the hero is bigger than on the other pages. I added an overlay on top of the hero images to make sure that the text is readable.
 
@@ -85,32 +85,36 @@ Below my navigation, I have a hero image on each page. On the homepage, the hero
 The footer includes the shelter´s opening hours, a Google Maps screenshot and links to the site´s pages. The Facebook and Instagram pages are also linked in the Footer.
 At the bottom of the footer, I have the copyright information. This includes the disclaimer, that the website was only made for educational purposes and that the images were taken from Unsplash.
 
-![Desktop Footer](assets/docs/screenshots/footer_desktop.png)
+![Desktop footer](assets/docs/screenshots/footer_desktop.png)
 
 In order to create an MVP without JavaScript I only included a screenshot of Google Maps. To further improve the website after this course I would use the [Google Maps API](https://developers.google.com/maps) to add a usable map to the footer.
 
 On bigger screen sizes the footer is organized in three columns using CSS grid. On smaller screens, the elements are presented in one column.
 
-![Mobile Footer](assets/docs/screenshots/footer_mobile.png)
+![Mobile footer](assets/docs/screenshots/footer_mobile.png)
 
 ### **Our Dogs Page**
 After a heading and some information about the adoption process, all the dogs available for adoption are presented on this page. Each dog is presented as a card with a picture of the dog, their name, facts about them and a short description of their character. 
 
 For the fictional shelter, I created eight dogs available for adoption. On big screen sizes, they are presented in three columns, on smaller sizes there are two columns and for mobile sizes one column.
 
-![Our Dogs Page](assets/docs/screenshots/our_dogs.png)
+![Our Dogs page](assets/docs/screenshots/our_dogs.png)
 
 ### **Contact Page**
-On the Contact page, the website user finds an application form to apply for one of the shelter´s dogs. The user has to fill out their contact details (required fields are clearly shown with a *) and can give additional information.
+On the Contact page, the website user finds an application form to apply for one of the shelter´s dogs. The user has to fill out their contact details (required fields are clearly marked with a *) and can give additional information.
 
-![Our Dogs Page](assets/docs/screenshots/contact.png)
+![Contact page](assets/docs/screenshots/contact.png)
+
+For this static website the form uses the `GET` action instead of `POST`. This is just for the purpose of improving UX to give clear feedback to the user after submitting the form. Below the feedback text I reused the section from the *Home* page linking to *Our Dogs* and the donation site. This fills the feedback page and links to the most important sites of the shelter again.
+
+![Our Dogs page](assets/docs/screenshots/contact_sent.png)
 
 ### **Found a Friend Page**
 The Found a Friend page shows a gallery of former shelter dogs with their new owners. A video is also included in the gallery. Autoplay is turned off for the video to enhance UX. As the shelter is fictional I used a [placeholder video from YouTube](https://www.youtube.com/watch?v=B7yOO4oKMVc&source_ve_path=OTY3MTQ&feature=emb_imp_woyt) that shows a dog being adopted. 
 
 To display the gallery I used CSS grid with column-spans for horizontal content.
 
-![Our Dogs Page](assets/docs/screenshots/found_a_friend.png)
+![Found a friend page](assets/docs/screenshots/found_a_friend.png)
 
 ## **Testing**
 I deployed a first version of my project after finishing the header. From this moment on I made sure to always test my live website. While implementing new features I had the website open in **Google Chrome**, resizing the browser using *Dev Tools*. I also opened the website on my phone after pushing new features. I think you get a better feeling for the mobile version of a website when opening it on a real phone, instead of a smaller browser window. Furthermore, I have **Microsoft Edge** and **Firefox** installed and made sure to open my deployed website there frequently.
