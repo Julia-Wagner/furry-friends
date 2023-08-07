@@ -453,7 +453,7 @@ article.dog-card {
    Contact page styles
    ========================================================================== */
 .application-container {
-    padding: 2rem;
+    padding: 0 2rem 2rem 2rem;
 }
 
 .form-input label {
@@ -736,6 +736,10 @@ section.gallery {
 
     .form-row.single-column {
         grid-template-columns: 1fr;
+    }
+
+    .application-container {
+        padding: 2rem;
     }
 
     /* tablet found a friend */
