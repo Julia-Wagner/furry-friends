@@ -26,7 +26,7 @@
 - General information about the shelter like the opening hours and address will be included in the footer.
 - The dogs that are available for adoption will be presented on a separate page (*Our Dogs*) with a picture and description of the dog.
 - An application form with relevant information will be included on a separate page (*Contact*).
-- On a separate page (*Found a friend*) pictures and a video will be included to show the dogs that are already adopted with their new owners.
+- On a separate page (*Found a Friend*) pictures and a video will be included to show the dogs that are already adopted with their new owners.
 
 - Call-to-action buttons will be used throughout the website to get donations. (As the shelter is only imaginative the *Donate* links link to the [PayPal Donations](https://www.paypal.com/donate/buttons/partner) information site and not a real organisation.)
 
@@ -37,19 +37,19 @@ I created wireframes to visualize my ideas using [Balsamiq](https://balsamiq.com
     - [Home](assets/docs/wireframes/wireframe_mobile_home.png)
     - [Our Dogs](assets/docs/wireframes/wireframe_mobile_our_dogs.png)
     - [Contact](assets/docs/wireframes/wireframe_mobile_contact.png)
-    - [Found a friend](assets/docs/wireframes/wireframe_mobile_found_a_friend.png)
+    - [Found a Friend](assets/docs/wireframes/wireframe_mobile_found_a_friend.png)
     
 - **Tablet Wireframes:**
     - [Home](assets/docs/wireframes/wireframe_tablet_home.png)
     - [Our Dogs](assets/docs/wireframes/wireframe_tablet_our_dogs.png)
     - [Contact](assets/docs/wireframes/wireframe_tablet_contact.png)
-    - [Found a friend](assets/docs/wireframes/wireframe_tablet_found_a_friend.png)
+    - [Found a Friend](assets/docs/wireframes/wireframe_tablet_found_a_friend.png)
 
 - **Desktop Wireframes:**
     - [Home](assets/docs/wireframes/wireframe_desktop_home.png)
     - [Our Dogs](assets/docs/wireframes/wireframe_desktop_our_dogs.png)
     - [Contact](assets/docs/wireframes/wireframe_desktop_contact.png)
-    - [Found a friend](assets/docs/wireframes/wireframe_desktop_found_a_friend.png)
+    - [Found a Friend](assets/docs/wireframes/wireframe_desktop_found_a_friend.png)
     
 ### **Color Scheme**
 To create the color scheme I looked at various pictures of dogs I might use as hero images. I quickly decided to go for green as my main color and picked `#83A603` to be one of my main colors. Then I used [coolors.co](https://coolors.co/) to find matching colors for my scheme. After picking out my five main colors I used [contrast-grid.eightshapes.com](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%2383a603%0D%0A%231b4001%0D%0A%23f0deb4%0D%0A%23f6f7eb%0D%0A%23001e1d&es-color-form__tile-size=regular&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) to check the contrast and possible color combinations.
@@ -114,7 +114,7 @@ The Found a Friend page shows a gallery of former shelter dogs with their new ow
 
 To display the gallery I used CSS grid with column-spans for horizontal content.
 
-![Found a friend page](assets/docs/screenshots/found_a_friend.png)
+![Found a Friend page](assets/docs/screenshots/found_a_friend.png)
 
 ## **Future Enhancements**
 I believe I added all the necessary features to create a minimum viable product that is ready to be used as a real-life website. However, there is room for improvement and further features. Here are some enhancements I would like to make in the future and to adapt this project for an existing shelter.
