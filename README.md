@@ -101,11 +101,11 @@ For the fictional shelter, I created eight dogs available for adoption. On big s
 ![Our Dogs page](assets/docs/screenshots/our_dogs.png)
 
 ### **Contact Page**
-On the Contact page, the website user finds an application form to apply for one of the shelter´s dogs. The user has to fill out their contact details (required fields are clearly marked with a *) and can give additional information.
+On the Contact page, the website user finds an application form to apply for one of the shelter´s dogs. The user has to fill out their contact details (required fields are marked with a *) and can give additional information.
 
 ![Contact page](assets/docs/screenshots/contact.png)
 
-For this static website the form uses the `GET` action instead of `POST`. This is just for the purpose of improving UX to give clear feedback to the user after submitting the form. Below the feedback text I reused the section from the *Home* page linking to *Our Dogs* and the donation site. This fills the feedback page and links to the most important sites of the shelter again.
+For this static website, the form uses the `GET` action instead of `POST`. This is just to improve UX to give clear feedback to the user after submitting the form. Below the feedback text, I reused the section from the *Home* page linking to *Our Dogs* and the donation site. This fills the feedback page and links to the most important sites of the shelter again.
 
 ![Our Dogs page](assets/docs/screenshots/contact_sent.png)
 
@@ -116,8 +116,17 @@ To display the gallery I used CSS grid with column-spans for horizontal content.
 
 ![Found a friend page](assets/docs/screenshots/found_a_friend.png)
 
+## **Future Enhancements**
+I believe I added all the necessary features to create a minimum viable product that is ready to be used as a real-life website. However, there is room for improvement and further features. Here are some enhancements I would like to make in the future and to adapt this project for an existing shelter.
+
+- The form on the *Contact* page uses a `GET` parameter at the moment to simulate submitting the form. I would change this to a `POST` request to make the form fully function. The form data would be sent to the shelter´s office mail address.
+
+- I would use the [Google Maps API](https://developers.google.com/maps) to add a usable map to the footer instead of the screenshot that is placed there at the moment.
+
+- To better present the dogs of a real shelter I would add a details page for each dog. On this page, there would be more text, pictures and maybe even videos of the according dog. For easier maintainability, a CMS like WordPress could be used to make the website dynamic.
+
 ## **Testing**
-I deployed a first version of my project after finishing the header. From this moment on I made sure to always test my live website. While implementing new features I had the website open in **Google Chrome**, resizing the browser using *Dev Tools*. I also opened the website on my phone after pushing new features. I think you get a better feeling for the mobile version of a website when opening it on a real phone, instead of a smaller browser window. Furthermore, I have **Microsoft Edge** and **Firefox** installed and made sure to open my deployed website there frequently.
+I deployed the first version of my project after finishing the header. From this moment on I made sure to always test my live website. While implementing new features I had the website open in **Google Chrome**, resizing the browser using *Dev Tools*. I also opened the website on my phone after pushing new features. I think you get a better feeling for the mobile version of a website when opening it on a real phone, instead of a smaller browser window. Furthermore, I have **Microsoft Edge** and **Firefox** installed and made sure to open my deployed website there frequently.
 
 To test **Safari** and **iOS** devices I signed up for a free trial on [BrowserStack](https://www.browserstack.com/) as I made a really good experience using this tool before. 
 
