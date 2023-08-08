@@ -27,6 +27,9 @@ The Furry Friends Shelter is an imagined dog shelter. This static website was cr
     - [**Future Enhancements**](#future-enhancements)
     - [**Testing**](#testing)
         - [**Issues**](#issues)
+        - [**Validation**](#validation)
+            - [**HTML**](#html)
+            - [**CSS**](#css)
     - [**Deployment**](#deployment)
     - [**Credits**](#credits)
         - [**Content**](#content)
@@ -175,6 +178,13 @@ While coding some issues kept me thinking for longer than others. Below is a lis
     I then noticed a horizontal scrollbar that apparently can appear depending on browser settings when `100vw` is used. So after some more thinking and looking for other hacky solutions I eventually went with the most obvious solution of just removing the `max-width` from my `main`. I decided to use a `.container` class on all the smaller sections instead.
     ![Issue with counter section](assets/docs/screenshots/issue_counter_fixed.png)
     - **Lesson learned** - I´ll think twice before using `100vw` from now on and try to think of obvious solutions instead of hacky ones.
+
+### **Validation**
+#### **HTML**
+#### **CSS**
+I used the [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjulia-wagner.github.io%2Ffurry-friends%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css) to validate my CSS. The validation came back with no errors or warnings.
+![CSS Validator](assets/docs/testing/css_validator.png)
+The full validation result can be found [here](assets/docs/testing/css_validator_results.pdf).
 
 ## **Deployment**
 I followed my mentor's tip and deployed my website early, after implementing the header. The steps to deploying a website on GitHub pages are:
