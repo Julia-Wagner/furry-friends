@@ -1,16 +1,46 @@
 # **Furry Friends Shelter**
+The Furry Friends Shelter is an imagined dog shelter. This static website was created for educational purposes. As described below in the planning phase I considered possible goals a real-world dog shelter and its visitors could have. The website has four pages helping to reach these goals.
+
+![Am I Responsive Screenshot](assets/docs/screenshots/am_i_responsive.png)
+
+## **Table of contents**
+- [**Planning**](#planning)
+    - [**External user goals**](#external-user-goals)
+    - [**Site owner goals**](#site-owner-goals)
+    - [**User Stories**](#user-stories)
+    - [**Features to achieve the goals**](#features-to-achieve-the-goals)
+    - [**Wireframes**](#wireframes)
+        - [**Mobile Wireframes**](#mobile-wireframes)
+        - [**Tablet Wireframes**](#tablet-wireframes)
+        - [**Desktop Wireframes**](#desktop-wireframes)
+    - [**Color Scheme**](#color-scheme)
+    - [**Fonts**](#fonts)
+    - [**Logo and Images**](#logo-and-images)
+    - [**Features**](#features)
+        - [**Header**](#header)
+        - [**Footer**](#footer)
+        - [**Our Dogs Page**](#our-dogs-page)
+        - [**Contact Page**](#contact-page)
+        - [**Found a Friend Page**](#found-a-friend-page)
+    - [**Future Enhancements**](#future-enhancements)
+    - [**Testing**](#testing)
+        - [**Issues**](#issues)
+    - [**Deployment**](#deployment)
+    - [**Credits**](#credits)
+        - [**Content**](#content)
+        - [**Media and Design**](#media-and-design)
 
 ## **Planning**
-### **External user´s goals:**
+### **External user goals**
 - Adopt a dog
 - Support the shelter
 - Look at cute pictures of dogs
 
-### **Site owner´s goals:**
+### **Site owner goals**
 - Find a new home for the dogs
 - Get donations
 
-### **User Stories:**
+### **User Stories**
 - As a user, I want to navigate the website using multiple devices.
 - As a user, I want to find general information about the shelter
 - As a user, I want to find out which dogs are available for adoption.
@@ -21,7 +51,7 @@
 - As the site owner, I want to find a loving home for the dogs.
 - As the site owner, I want to get donations.
 
-### **Features to achieve the goals:**
+### **Features to achieve the goals**
 - The website will be built with a mobile-first approach, to ensure it is responsive. I will also test it on various devices and screen sizes.
 - General information about the shelter like the opening hours and address will be included in the footer.
 - The dogs that are available for adoption will be presented on a separate page (*Our Dogs*) with a picture and description of the dog.
@@ -33,19 +63,19 @@
 ### **Wireframes**
 I created wireframes to visualize my ideas using [Balsamiq](https://balsamiq.com/). As I want to stick to the mobile-first approach I created wireframes for mobile, tablet and desktop screen sizes.
 
-- **Mobile Wireframes:**
+- **Mobile Wireframes**
     - [Home](assets/docs/wireframes/wireframe_mobile_home.png)
     - [Our Dogs](assets/docs/wireframes/wireframe_mobile_our_dogs.png)
     - [Contact](assets/docs/wireframes/wireframe_mobile_contact.png)
     - [Found a Friend](assets/docs/wireframes/wireframe_mobile_found_a_friend.png)
     
-- **Tablet Wireframes:**
+- **Tablet Wireframes**
     - [Home](assets/docs/wireframes/wireframe_tablet_home.png)
     - [Our Dogs](assets/docs/wireframes/wireframe_tablet_our_dogs.png)
     - [Contact](assets/docs/wireframes/wireframe_tablet_contact.png)
     - [Found a Friend](assets/docs/wireframes/wireframe_tablet_found_a_friend.png)
 
-- **Desktop Wireframes:**
+- **Desktop Wireframes**
     - [Home](assets/docs/wireframes/wireframe_desktop_home.png)
     - [Our Dogs](assets/docs/wireframes/wireframe_desktop_our_dogs.png)
     - [Contact](assets/docs/wireframes/wireframe_desktop_contact.png)
@@ -64,9 +94,7 @@ After choosing my colors and fonts I wanted to make a simple Logo for my website
 
 ![Furry Friends logo](assets/docs/screenshots/logo.png)
 
-
 ## **Features**
-
 ### **Header**
 To follow my mobile-first approach I started by looking at tutorials on how to implement a hamburger menu without JS. I found a video with the according [Codepen](https://codepen.io/kevinpowell/pen/jxppmr) from Kevin Powell. I used the information from the video and example code in the Codepen for my navigation.
 To improve accessibility I added **Menu** as a text alternative and used `aria-hidden` on the hamburger icon.
