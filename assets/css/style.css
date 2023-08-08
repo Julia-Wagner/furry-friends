@@ -68,7 +68,7 @@ header {
 }
 
 .nav-burger:focus~.nav-burger-label {
-    outline: 3px solid rgba(lightblue, .75);
+    outline: 3px solid rgba(173, 216, 230, .75);
 }
 
 .nav-burger-label {
@@ -479,25 +479,10 @@ article.dog-card {
     font-size: 1rem;
 }
 
-/* change font-family for input text placeholder in all browsers */
+/* change font-family for input text placeholder */
 .form-input input,
-.form-input input::-webkit-input-placeholder,
-.form-input textarea::-webkit-input-placeholder {
-    font-family: 'PT Sans', sans-serif;
-}
-
-.form-input input:-ms-input-placeholder,
-.form-input textarea:-ms-input-placeholder {
-    font-family: 'PT Sans', sans-serif;
-}
-
-.form-input input:-moz-placeholder,
-.form-input textarea:-moz-placeholder {
-    font-family: 'PT Sans', sans-serif;
-}
-
-.form-input input::-moz-placeholder,
-.form-input textarea::-moz-placeholder {
+.form-input input::placeholder,
+.form-input textarea::placeholder {
     font-family: 'PT Sans', sans-serif;
 }
 
