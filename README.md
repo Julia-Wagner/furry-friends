@@ -179,7 +179,10 @@ I followed my mentor's tip and deployed my website early, after implementing the
 The link to my live site is: [Furry Friends Shelter](https://julia-wagner.github.io/furry-friends/)
 
 ## **Credits**
+Thanks to my Code Institute Mentor David Bowers for giving me valuable feedback and tips during this project.
+
 ### **Content**
+- The content was written by myself and the images on the *Found a Friend* page as well as the first three dogs on the *Our Dogs* page are my own.
 - I adapted my hamburger menu from a video with the according [Codepen](https://codepen.io/kevinpowell/pen/jxppmr) from Kevin Powell. 
 - To test my website I signed up for a free trial on [BrowserStack](https://www.browserstack.com/).
 
@@ -188,3 +191,5 @@ The link to my live site is: [Furry Friends Shelter](https://julia-wagner.github
 - I used [Balsamiq](https://balsamiq.com/) to create Wireframes.
 - With [coolors.co](https://coolors.co/) I created a color scheme and used [contrast-grid.eightshapes.com](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%2383a603%0D%0A%231b4001%0D%0A%23f0deb4%0D%0A%23f6f7eb%0D%0A%23001e1d&es-color-form__tile-size=regular&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) to check the contrast and possible color combinations.
 - [fontpair.co](https://www.fontpair.co/) was used to get inspiration for font pairings, the fonts were downloaded from [Google Fonts](https://fonts.google.com/).
+- The icons for the hamburger menu and footer were taken from [Font Awesome](https://fontawesome.com).
+- The screenshot at the top of this document was taken from [Am I Responsive?](https://ui.dev/amiresponsive?url=https://julia-wagner.github.io/furry-friends/).
