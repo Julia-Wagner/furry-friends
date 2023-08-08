@@ -182,8 +182,10 @@ While coding some issues kept me thinking for longer than others. Below is a lis
 ### **Validation**
 #### **HTML**
 #### **CSS**
-I used the [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjulia-wagner.github.io%2Ffurry-friends%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css) to validate my CSS. The validation came back with no errors or warnings.
+I used the [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjulia-wagner.github.io%2Ffurry-friends%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css) to validate my CSS. The validation came back with no errors or warnings. I first validated the CSS by direct input and had a warning saying that some parts of the CSS can only be validated by URI. So I validated my deployed *Home* page too, to make sure there are no errors.
+
 ![CSS Validator](assets/docs/testing/css_validator.png)
+
 The full validation result can be found [here](assets/docs/testing/css_validator_results.pdf).
 
 ## **Deployment**
