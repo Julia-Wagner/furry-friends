@@ -176,19 +176,19 @@ nav li {
 }
 
 .hero-image.home {
-    background-image: url(../images/hero_home.jpg);
+    background-image: url(../images/hero_home.webp);
 }
 
 .hero-image.dogs {
-    background-image: url(../images/hero_dogs.jpg);
+    background-image: url(../images/hero_dogs.webp);
 }
 
 .hero-image.contact {
-    background-image: url(../images/hero_contact.jpg);
+    background-image: url(../images/hero_contact.webp);
 }
 
 .hero-image.friend {
-    background-image: url(../images/hero_friend.jpg);
+    background-image: url(../images/hero_friend.webp);
 }
 
 .hero-text {
@@ -377,11 +377,11 @@ section.image-links.container {
 }
 
 .background-image.find-friend {
-    background-image: url(../images/home_find.jpg);
+    background-image: url(../images/home_find.webp);
 }
 
 .background-image.make-donation {
-    background-image: url(../images/home_donation.jpg);
+    background-image: url(../images/home_donation.webp);
 }
 
 .background-image {
@@ -479,7 +479,7 @@ article.dog-card {
     font-size: 1rem;
 }
 
-/* change font-family for input text placeholder */
+/* change font-family for input text placeholder*/
 .form-input input,
 .form-input input::placeholder,
 .form-input textarea::placeholder {
