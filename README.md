@@ -63,23 +63,23 @@ The Furry Friends Shelter is an imagined dog shelter. This static website was cr
 ### **Wireframes**
 I created wireframes to visualize my ideas using [Balsamiq](https://balsamiq.com/). As I want to stick to the mobile-first approach I created wireframes for mobile, tablet and desktop screen sizes.
 
-- **Mobile Wireframes**
-    - [Home](assets/docs/wireframes/wireframe_mobile_home.png)
-    - [Our Dogs](assets/docs/wireframes/wireframe_mobile_our_dogs.png)
-    - [Contact](assets/docs/wireframes/wireframe_mobile_contact.png)
-    - [Found a Friend](assets/docs/wireframes/wireframe_mobile_found_a_friend.png)
+#### **Mobile Wireframes**
+- [Home](assets/docs/wireframes/wireframe_mobile_home.png)
+- [Our Dogs](assets/docs/wireframes/wireframe_mobile_our_dogs.png)
+- [Contact](assets/docs/wireframes/wireframe_mobile_contact.png)
+- [Found a Friend](assets/docs/wireframes/wireframe_mobile_found_a_friend.png)
     
-- **Tablet Wireframes**
-    - [Home](assets/docs/wireframes/wireframe_tablet_home.png)
-    - [Our Dogs](assets/docs/wireframes/wireframe_tablet_our_dogs.png)
-    - [Contact](assets/docs/wireframes/wireframe_tablet_contact.png)
-    - [Found a Friend](assets/docs/wireframes/wireframe_tablet_found_a_friend.png)
+#### **Tablet Wireframes**
+- [Home](assets/docs/wireframes/wireframe_tablet_home.png)
+- [Our Dogs](assets/docs/wireframes/wireframe_tablet_our_dogs.png)
+- [Contact](assets/docs/wireframes/wireframe_tablet_contact.png)
+- [Found a Friend](assets/docs/wireframes/wireframe_tablet_found_a_friend.png)
 
-- **Desktop Wireframes**
-    - [Home](assets/docs/wireframes/wireframe_desktop_home.png)
-    - [Our Dogs](assets/docs/wireframes/wireframe_desktop_our_dogs.png)
-    - [Contact](assets/docs/wireframes/wireframe_desktop_contact.png)
-    - [Found a Friend](assets/docs/wireframes/wireframe_desktop_found_a_friend.png)
+#### **Desktop Wireframes**
+- [Home](assets/docs/wireframes/wireframe_desktop_home.png)
+- [Our Dogs](assets/docs/wireframes/wireframe_desktop_our_dogs.png)
+- [Contact](assets/docs/wireframes/wireframe_desktop_contact.png)
+- [Found a Friend](assets/docs/wireframes/wireframe_desktop_found_a_friend.png)
     
 ### **Color Scheme**
 To create the color scheme I looked at various pictures of dogs I might use as hero images. I quickly decided to go for green as my main color and picked `#83A603` to be one of my main colors. Then I used [coolors.co](https://coolors.co/) to find matching colors for my scheme. After picking out my five main colors I used [contrast-grid.eightshapes.com](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%2383a603%0D%0A%231b4001%0D%0A%23f0deb4%0D%0A%23f6f7eb%0D%0A%23001e1d&es-color-form__tile-size=regular&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) to check the contrast and possible color combinations.
