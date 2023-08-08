@@ -1,4 +1,6 @@
 # **Furry Friends Shelter**
+[Link to live project](https://julia-wagner.github.io/furry-friends/)
+
 The Furry Friends Shelter is an imagined dog shelter. This static website was created for educational purposes. As described below in the planning phase I considered possible goals a real-world dog shelter and its visitors could have. The website has four pages helping to reach these goals.
 
 ![Am I Responsive Screenshot](assets/docs/screenshots/am_i_responsive.png)
@@ -115,37 +117,42 @@ At the bottom of the footer, I have the copyright information. This includes the
 
 ![Desktop footer](assets/docs/screenshots/footer_desktop.png)
 
-In order to create an MVP without JavaScript I only included a screenshot of Google Maps. To further improve the website after this course I would use the [Google Maps API](https://developers.google.com/maps) to add a usable map to the footer.
+In order to create a MVP without JavaScript I only included a screenshot of Google Maps. To further improve the website after this course I would use the [Google Maps API](https://developers.google.com/maps) to add a usable map to the footer.
 
 On bigger screen sizes the footer is organized in three columns using CSS grid. On smaller screens, the elements are presented in one column.
 
 ![Mobile footer](assets/docs/screenshots/footer_mobile.png)
+
+### **Home Page**
+The *Home* page is presented in different sections. First I have a heading and a short description text of the shelter. Next, there is an image with some text asking for donations. Then I have a full-width banner with a statistic of the shelter. At the bottom of the *Home* page, there are two decorative images with links to the *Our Dogs* page and the PayPal donation site.
+
+![Home Page](assets/docs/screenshots/home.png)
 
 ### **Our Dogs Page**
 After a heading and some information about the adoption process, all the dogs available for adoption are presented on this page. Each dog is presented as a card with a picture of the dog, their name, facts about them and a short description of their character. 
 
 For the fictional shelter, I created eight dogs available for adoption. On big screen sizes, they are presented in three columns, on smaller sizes there are two columns and for mobile sizes one column.
 
-![Our Dogs page](assets/docs/screenshots/our_dogs.png)
+![Our Dogs Page](assets/docs/screenshots/our_dogs.png)
 
 ### **Contact Page**
-On the Contact page, the website user finds an application form to apply for one of the shelter´s dogs. The user has to fill out their contact details (required fields are marked with a *) and can give additional information.
+On the *Contact* page, the website user finds an application form to apply for one of the shelter´s dogs. The user has to fill out their contact details (required fields are marked with a *) and can give additional information.
 
-![Contact page](assets/docs/screenshots/contact.png)
+![Contact Page](assets/docs/screenshots/contact.png)
 
 For this static website, the form uses the `GET` action instead of `POST`. This is just to improve UX to give clear feedback to the user after submitting the form. Below the feedback text, I reused the section from the *Home* page linking to *Our Dogs* and the donation site. This fills the feedback page and links to the most important sites of the shelter again.
 
-![Our Dogs page](assets/docs/screenshots/contact_sent.png)
+![Contact sent Page](assets/docs/screenshots/contact_sent.png)
 
 ### **Found a Friend Page**
-The Found a Friend page shows a gallery of former shelter dogs with their new owners. A video is also included in the gallery. Autoplay is turned off for the video to enhance UX. As the shelter is fictional I used a [placeholder video from YouTube](https://www.youtube.com/watch?v=B7yOO4oKMVc&source_ve_path=OTY3MTQ&feature=emb_imp_woyt) that shows a dog being adopted. 
+The *Found a Friend* page shows a gallery of former shelter dogs with their new owners. A video is also included in the gallery. Autoplay is turned off for the video to ensure user control. As the shelter is fictional I used a [placeholder video from YouTube](https://www.youtube.com/watch?v=B7yOO4oKMVc&source_ve_path=OTY3MTQ&feature=emb_imp_woyt) that shows a dog being adopted. 
 
 To display the gallery I used CSS grid with column-spans for horizontal content.
 
-![Found a Friend page](assets/docs/screenshots/found_a_friend.png)
+![Found a Friend Page](assets/docs/screenshots/found_a_friend.png)
 
 ## **Future Enhancements**
-I believe I added all the necessary features to create a minimum viable product that is ready to be used as a real-life website. However, there is room for improvement and further features. Here are some enhancements I would like to make in the future and to adapt this project for an existing shelter.
+I believe I added all the necessary features to create a minimum viable product that is ready to be used as a real-life website. However, there is room for improvement and further features. Here are some enhancements I would like to make in the future and to adapt this project for a real-world shelter.
 
 - The form on the *Contact* page uses a `GET` parameter at the moment to simulate submitting the form. I would change this to a `POST` request to make the form fully function. The form data would be sent to the shelter´s office mail address.
 
@@ -161,7 +168,7 @@ To test **Safari** and **iOS** devices I signed up for a free trial on [BrowserS
 ### **Issues**
 While coding some issues kept me thinking for longer than others. Below is a list of issues that took me a while to fix.
 
-1. Having a full-width counter section on the Home page.
+1. Having a full-width counter section on the *Home* page.
     - The issue I found while adapting the counter section to desktop screen sizes was that it wasn´t full width on bigger screens.
     ![Issue with counter section](assets/docs/screenshots/issue_counter.png)
     - This issue appeared because I limited the width of my `main` to `1600px`. I tried fixing this by using `position: absolute;`. However, this led me to another problem as it removed the element from the document flow. So I decided to use `width: 100vw` instead. To then move it to the left side of the screen without positioning it I used a negative margin with `calc()` to calculate it.
