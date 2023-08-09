@@ -173,13 +173,21 @@ While coding some issues kept me thinking for longer than others. Below is a lis
 
 1. Having a full-width counter section on the *Home* page.
     - The issue I found while adapting the counter section to desktop screen sizes was that it wasn´t full width on bigger screens.
+
     ![Issue with counter section](assets/docs/screenshots/issue_counter.png)
-    - This issue appeared because I limited the width of my `main` to `1600px`. I tried fixing this by using `position: absolute;`. However, this led me to another problem as it removed the element from the document flow. So I decided to use `width: 100vw` instead. To then move it to the left side of the screen without positioning it I used a negative margin with `calc()` to calculate it.
+    - This issue appeared because I limited the width of my `main` to `1600px`. I tried fixing this by using `position: absolute;`. However, this led me to another problem as it removed the element from the document flow. So I decided to use `width: 100vw` instead. To then move it to the left side of the screen without positioning it I used a negative margin with `calc()` to calculate it. \
     I then noticed a horizontal scrollbar that apparently can appear depending on browser settings when `100vw` is used. So after some more thinking and looking for other hacky solutions I eventually went with the most obvious solution of just removing the `max-width` from my `main`. I decided to use a `.container` class on all the smaller sections instead.
+
     ![Issue with counter section](assets/docs/screenshots/issue_counter_fixed.png)
     - **Lesson learned** - I´ll think twice before using `100vw` from now on and try to think of obvious solutions instead of hacky ones.
 2. Getting a better performance on Lighthouse testing.
-    - 
+    - When I first ran the Lighthouse test my values for *Accessibility*, *Best Practices* and *SEO* were between 90 and 100 for all pages. But for *Performance* they were between 70 and 80, for the mobile version of my *Home* page it was even down to 51.
+
+    ![Mobile Home Performance](assets/docs/screenshots/mobile_home_initial.png)
+    - Trying to get this up was probably one of the hardest challenges for me during this project as I was already familiar with HTML and CSS. \
+    First I tried compressing the images again, but that didn´t change much. Then I converted them to the *.webp* format and changed the image size. As I had downloaded the images from Unsplash in their original size I was able to really size down my images this way. \
+    The big problem that remained was FontAwesome. I only needed four icons so creating a Subset would have been a good solution. However, this is only possible with a paid plan so I tried hosting the files within the project instead of loading the CDN, but that didn´t really change anything for the *Performance* value. \
+    So I decided to not use FontAwesome and just download the icons and use them as images. I downloaded them from [Icons8](https://icons8.com/) and added a credit link in the footer. This significantly increased my *Performance* score.
 
 ### **Validation**
 #### **HTML**
