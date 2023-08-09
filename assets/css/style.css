@@ -176,19 +176,19 @@ nav li {
 }
 
 .hero-image.home {
-    background-image: url(../images/hero_home.webp);
+    background-image: url(../images/hero_home_mobile.webp);
 }
 
 .hero-image.dogs {
-    background-image: url(../images/hero_dogs.webp);
+    background-image: url(../images/hero_dogs_mobile.webp);
 }
 
 .hero-image.contact {
-    background-image: url(../images/hero_contact.webp);
+    background-image: url(../images/hero_contact_mobile.webp);
 }
 
 .hero-image.friend {
-    background-image: url(../images/hero_friend.webp);
+    background-image: url(../images/hero_friend_mobile.webp);
 }
 
 .hero-text {
@@ -551,6 +551,25 @@ section.gallery {
 
     .hero-container {
         margin-top: 6rem;
+    }
+}
+
+/* query for hero images */
+@media screen and (min-width: 800px) {
+    .hero-image.home {
+        background-image: url(../images/hero_home.webp);
+    }
+    
+    .hero-image.dogs {
+        background-image: url(../images/hero_dogs.webp);
+    }
+    
+    .hero-image.contact {
+        background-image: url(../images/hero_contact.webp);
+    }
+    
+    .hero-image.friend {
+        background-image: url(../images/hero_friend.webp);
     }
 }
 
