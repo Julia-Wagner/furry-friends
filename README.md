@@ -183,11 +183,14 @@ While coding some issues kept me thinking for longer than others. Below is a lis
 2. Getting a better performance on Lighthouse testing.
     - When I first ran the Lighthouse test my values for *Accessibility*, *Best Practices* and *SEO* were between 90 and 100 for all pages. But for *Performance* they were between 70 and 80, for the mobile version of my *Home* page it was even down to 51.
 
-    ![Mobile Home Performance](assets/docs/screenshots/mobile_home_initial.png)
+    ![Initial Mobile Home Performance](assets/docs/testing/mobile_home_initial.png)
     - Trying to get this up was probably one of the hardest challenges for me during this project as I was already familiar with HTML and CSS. \
     First I tried compressing the images again, but that didn´t change much. Then I converted them to the *.webp* format and changed the image size. As I had downloaded the images from Unsplash in their original size I was able to really size down my images this way. \
     The big problem that remained was FontAwesome. I only needed four icons so creating a Subset would have been a good solution. However, this is only possible with a paid plan so I tried hosting the files within the project instead of loading the CDN, but that didn´t really change anything for the *Performance* value. \
-    So I decided to not use FontAwesome and just download the icons and use them as images. I downloaded them from [Icons8](https://icons8.com/) and added a credit link in the footer. This significantly increased my *Performance* score.
+    So I decided to not use FontAwesome and just download the icons and use them as images. I downloaded them from [Icons8](https://icons8.com/) and added a credit link in the footer. This significantly increased my *Performance* score. To further improve the mobile score I resized my hero images and used these smaller images for mobile sized screens. This way I was able to score 100 at the *Performance* value too.
+
+    ![Mobile Home Performance](assets/docs/testing/mobile_home_score.png)
+
 
 ### **Validation**
 #### **HTML**
