@@ -178,6 +178,8 @@ While coding some issues kept me thinking for longer than others. Below is a lis
     I then noticed a horizontal scrollbar that apparently can appear depending on browser settings when `100vw` is used. So after some more thinking and looking for other hacky solutions I eventually went with the most obvious solution of just removing the `max-width` from my `main`. I decided to use a `.container` class on all the smaller sections instead.
     ![Issue with counter section](assets/docs/screenshots/issue_counter_fixed.png)
     - **Lesson learned** - I´ll think twice before using `100vw` from now on and try to think of obvious solutions instead of hacky ones.
+2. Getting a better performance on Lighthouse testing.
+    - 
 
 ### **Validation**
 #### **HTML**
