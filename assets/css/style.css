@@ -591,7 +591,7 @@ section.gallery {
     /**
     * start of code adapted from Kevin Powell https://codepen.io/kevinpowell/pen/jxppmr
     */
-    .nav-burger-label {
+    .nav-burger-label, #nav-burger {
         display: none;
     }
 
