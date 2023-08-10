@@ -26,10 +26,13 @@ The Furry Friends Shelter is an imagined dog shelter. This static website was cr
         - [**Found a Friend Page**](#found-a-friend-page)
     - [**Future Enhancements**](#future-enhancements)
     - [**Testing**](#testing)
+        - [**Manual Testing**](#manual-testing)
         - [**Issues**](#issues)
         - [**Validation**](#validation)
             - [**HTML**](#html)
             - [**CSS**](#css)
+        - [**Lighthouse Testing**](#lighthouse-testing)
+        - [**User Story Testing**](#user-story-testing)
     - [**Deployment**](#deployment)
     - [**Credits**](#credits)
         - [**Content**](#content)
@@ -101,7 +104,7 @@ After choosing my colors and fonts I wanted to make a simple Logo for my website
 
 ## **Features**
 ### **Header**
-To follow my mobile-first approach I started by looking at tutorials on how to implement a hamburger menu without JS. I found a video with the according [Codepen](https://codepen.io/kevinpowell/pen/jxppmr) from Kevin Powell. I used the information from the video and example code in the Codepen for my navigation.
+To follow my mobile-first approach I started by looking at tutorials on how to implement a hamburger menu without JavaScript. I found a video with the according [Codepen](https://codepen.io/kevinpowell/pen/jxppmr) from Kevin Powell. I used the information from the video and example code in the Codepen for my navigation.
 To improve accessibility I added **Menu** as a text alternative and used `aria-hidden` on the hamburger icon.
 
 ![Mobile header](docs/screenshots/header_mobile.png)
@@ -116,11 +119,11 @@ Below my navigation, I have a hero image on each page. On the homepage, the hero
 
 ### **Footer**
 The footer includes the shelter´s opening hours, a Google Maps screenshot and links to the site´s pages. The Facebook and Instagram pages are also linked in the Footer.
-At the bottom of the footer, I have the copyright information. This includes the disclaimer, that the website was only made for educational purposes and that the images were taken from Unsplash.
+At the bottom of the footer, I have the copyright information. This includes the disclaimer, that the website was only made for educational purposes and that the images and icons were taken from Unsplash and Icons8.
 
 ![Desktop footer](docs/screenshots/footer_desktop.png)
 
-In order to create a MVP without JavaScript I only included a screenshot of Google Maps. To further improve the website after this course I would use the [Google Maps API](https://developers.google.com/maps) to add a usable map to the footer.
+To create a minimum viable product without JavaScript I only included a screenshot of Google Maps. To further improve the website after this course I would use the [Google Maps API](https://developers.google.com/maps) to add a usable map to the footer.
 
 On bigger screen sizes the footer is organized in three columns using CSS grid. On smaller screens, the elements are presented in one column.
 
@@ -139,7 +142,7 @@ For the fictional shelter, I created eight dogs available for adoption. On big s
 ![Our Dogs Page](docs/screenshots/our_dogs.png)
 
 ### **Contact Page**
-On the *Contact* page, the website user finds an application form to apply for one of the shelter´s dogs. The user has to fill out their contact details (required fields are marked with a *) and can give additional information.
+On the *Contact* page, the website user finds an application form to apply for one of the shelter´s dogs. The user has to fill out their contact details (required fields are marked with a * and checked using the `required` attribute) and can give additional information.
 
 ![Contact Page](docs/screenshots/contact.png)
 
@@ -164,6 +167,7 @@ I believe I added all the necessary features to create a minimum viable product 
 - To better present the dogs of a real shelter I would add a details page for each dog. On this page, there would be more text, pictures and maybe even videos of the according dog. For easier maintainability, a CMS like WordPress could be used to make the website dynamic.
 
 ## **Testing**
+### **Manual Testing**
 I deployed the first version of my project after finishing the header. From this moment on I made sure to always test my live website. While implementing new features I had the website open in **Google Chrome**, resizing the browser using *Dev Tools*. I also opened the website on my phone after pushing new features. I think you get a better feeling for the mobile version of a website when opening it on a real phone, instead of a smaller browser window. Furthermore, I have **Microsoft Edge** and **Firefox** installed and made sure to open my deployed website there frequently.
 
 To test **Safari** and **iOS** devices I signed up for a free trial on [BrowserStack](https://www.browserstack.com/) as I made a really good experience using this tool before. 
@@ -184,13 +188,12 @@ While coding some issues kept me thinking for longer than others. Below is a lis
     - When I first ran the Lighthouse test my values for *Accessibility*, *Best Practices* and *SEO* were between 90 and 100 for all pages. But for *Performance* they were between 70 and 80, for the mobile version of my *Home* page it was even down to 51.
 
     ![Initial Mobile Home Performance](docs/testing/mobile_home_initial.png)
-    - Trying to get this up was probably one of the hardest challenges for me during this project as I was already familiar with HTML and CSS. \
+    - Trying to get this up was probably one of the hardest challenges for me during this project as I was already familiar with HTML and CSS, but not so much with performance optimization. \
     First I tried compressing the images again, but that didn´t change much. Then I converted them to the *.webp* format and changed the image size. As I had downloaded the images from Unsplash in their original size I was able to really size down my images this way. \
-    The big problem that remained was FontAwesome. I only needed four icons so creating a Subset would have been a good solution. However, this is only possible with a paid plan so I tried hosting the files within the project instead of loading the CDN, but that didn´t really change anything for the *Performance* value. \
-    So I decided to not use FontAwesome and just download the icons and use them as images. I downloaded them from [Icons8](https://icons8.com/) and added a credit link in the footer. This significantly increased my *Performance* score. To further improve the mobile score I resized my hero images and used these smaller images for mobile sized screens. This way I was able to score 100 at the *Performance* value too.
+    The big problem that remained was FontAwesome. I only needed four icons so creating a Subset would have been a good solution. However, this is only possible with a paid plan so I tried hosting the files within the project instead of loading the CDN, but that didn´t change anything for the *Performance* value. \
+    So I decided to not use FontAwesome and just download the icons and use them as images. I downloaded them from [Icons8](https://icons8.com/) and added a credit link in the footer. This significantly increased my *Performance* score. To further improve the mobile score I resized my hero images and used these smaller images for mobile-sized screens. This way I was able to score 100 at the *Performance* value too.
 
     ![Mobile Home Performance](docs/testing/mobile_home_score.png)
-
 
 ### **Validation**
 #### **HTML**
@@ -200,6 +203,10 @@ I used the [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/validator?
 ![CSS Validator](docs/testing/css_validator.png)
 
 The full validation result can be found [here](docs/testing/css_validator_results.pdf).
+
+### **Lighthouse Testing**
+
+### **User Story Testing**
 
 ## **Deployment**
 I followed my mentor's tip and deployed my website early, after implementing the header. The steps to deploying a website on GitHub pages are:
@@ -220,8 +227,9 @@ Thanks to my Code Institute Mentor David Bowers for giving me valuable feedback 
 
 ### **Media and Design**
 - The images used for the website are taken from [unsplash.com](https://unsplash.com/) and compressed using [tinypng.com](https://tinypng.com/). Some images of dogs are my own pictures.
+- [Convertio](https://convertio.co/) was used to convert images to the *.webp* format.
 - I used [Balsamiq](https://balsamiq.com/) to create Wireframes.
 - With [coolors.co](https://coolors.co/) I created a color scheme and used [contrast-grid.eightshapes.com](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%2383a603%0D%0A%231b4001%0D%0A%23f0deb4%0D%0A%23f6f7eb%0D%0A%23001e1d&es-color-form__tile-size=regular&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) to check the contrast and possible color combinations.
 - [fontpair.co](https://www.fontpair.co/) was used to get inspiration for font pairings, the fonts were downloaded from [Google Fonts](https://fonts.google.com/).
-- The icons for the hamburger menu and footer were taken from [Font Awesome](https://fontawesome.com).
+- The icons for the hamburger menu and footer were taken from [Icons8](https://icons8.com).
 - The screenshot at the top of this document was taken from [Am I Responsive?](https://ui.dev/amiresponsive?url=https://julia-wagner.github.io/furry-friends/).
