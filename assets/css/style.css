@@ -49,9 +49,7 @@ img {
 }
 
 /* mobile hamburger menu */
-/**
-* start of code adapted from Kevin Powell https://codepen.io/kevinpowell/pen/jxppmr
-*/
+/* start of code adapted from Kevin Powell https://codepen.io/kevinpowell/pen/jxppmr */
 header {
     background: var(--lightgreen);
     position: fixed;
@@ -126,9 +124,7 @@ nav li {
     transition: opacity 250ms ease-in-out 250ms;
 }
 
-/**
-* end of code adapted from Kevin Powell https://codepen.io/kevinpowell/pen/jxppmr
-*/
+/* end of code adapted from Kevin Powell https://codepen.io/kevinpowell/pen/jxppmr */
 
 .nav-burger-label span {
     font-weight: bold;
@@ -588,9 +584,7 @@ section.gallery {
     }
 
     /* desktop menu */
-    /**
-    * start of code adapted from Kevin Powell https://codepen.io/kevinpowell/pen/jxppmr
-    */
+    /* start of code adapted from Kevin Powell https://codepen.io/kevinpowell/pen/jxppmr */
     .nav-burger-label, #nav-burger {
         display: none;
     }
@@ -652,9 +646,7 @@ section.gallery {
     .nav-button.active::before {
         transform: scale(1, 1);
     }
-    /**
-    * end of code adapted from Kevin Powell https://codepen.io/kevinpowell/pen/jxppmr
-    */
+    /* end of code adapted from Kevin Powell https://codepen.io/kevinpowell/pen/jxppmr */
 
     .nav-button.cta-button {
         margin: 0;

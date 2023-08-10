@@ -51,7 +51,7 @@ The Furry Friends Shelter is an imagined dog shelter. This static website was cr
 
 ### **User Stories**
 - As a user, I want to navigate the website using multiple devices.
-- As a user, I want to find general information about the shelter
+- As a user, I want to find general information about the shelter.
 - As a user, I want to find out which dogs are available for adoption.
 - As a user, I want to apply for a dog.
 - As a user, I want to support the shelter.
