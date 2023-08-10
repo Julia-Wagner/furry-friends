@@ -32,7 +32,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: 'Nunito', sans-serif;
     margin: 0;
 }
@@ -404,8 +405,12 @@ section.image-links.container {
 /* ==========================================================================
    Our Dogs page styles
    ========================================================================== */
-section.dog-cards {
+.article-container {
     display: grid;
+}
+
+.dog-cards h3 {
+    text-align: center;
 }
 
 .dog-card figure {
@@ -720,7 +725,7 @@ section.gallery {
 @media screen and (min-width: 700px) {
 
     /* tablet our dogs */
-    section.dog-cards {
+    .article-container {
         grid-template-columns: repeat(2, 1fr);
         padding: 2rem;
     }
@@ -759,7 +764,7 @@ section.gallery {
 @media screen and (min-width: 1000px) {
 
     /* desktop our dogs */
-    section.dog-cards {
+    .article-container {
         grid-template-columns: repeat(3, 1fr);
     }
 
