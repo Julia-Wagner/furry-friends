@@ -198,6 +198,21 @@ While coding some issues kept me thinking for longer than others. Below is a lis
 
 ### **Validation**
 #### **HTML**
+I used the [W3C Markup Validation Service](https://validator.w3.org/) to validate my HTML. I originally had some warnings because I had a few sections and articles without a heading element.
+
+![HTML Validator warnings](docs/testing/html_validator_warnings.png)
+
+I then used a `<h3>` inside my `<figcaption>` for my dog cards and added headings for the sections where it made sense. In a few cases it wouldn´t make sense to add a heading so I changed these articles to divs. Now all my pages came back with no errors or warnings.
+
+![HTML Validator](docs/testing/html_validator.png)
+
+The full validation results can be found here for:
+- [index.html](docs/testing/html_validator_index.pdf) 
+- [dogs.html](docs/testing/html_validator_dogs.pdf)
+- [contact.html](docs/testing/html_validator_contact.pdf)
+- [contact_sent.html](docs/testing/html_validator_contact_sent.pdf)
+- [friend.html](docs/testing/html_validator_friend.pdf)
+
 #### **CSS**
 I used the [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjulia-wagner.github.io%2Ffurry-friends%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css) to validate my CSS. The validation came back with no errors or warnings. I first validated the CSS by direct input and had a warning saying that some parts of the CSS can only be validated by URI. So I validated my deployed *Home* page too, to make sure there are no errors.
 
