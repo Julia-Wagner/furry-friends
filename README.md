@@ -32,6 +32,7 @@ The Furry Friends Shelter is an imagined dog shelter. This static website was cr
             - [**HTML**](#html)
             - [**CSS**](#css)
         - [**Lighthouse Testing**](#lighthouse-testing)
+        - [**Accessibility Testing**](#accessibility-testing)
         - [**User Story Testing**](#user-story-testing)
     - [**Deployment**](#deployment)
     - [**Credits**](#credits)
@@ -205,6 +206,17 @@ I used the [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/validator?
 The full validation result can be found [here](docs/testing/css_validator_results.pdf).
 
 ### **Lighthouse Testing**
+As described before in the [Issues](#issues) section, getting the *Performance* score on Lighthouse to a high level was probably the biggest challenge for me in this project. \
+I followed the recommendations I got in the Lighthouse tab and made some performance improvements that I already described. This way I managed to get my score for *Accessibility*, *Best Practices* and *SEO* to 100 for all mobile and desktop pages. The score for *Performance* varies between 95 and 100 depending on the page, size and when I run the test. Only the score for my *Found a Friend* page is 92 because it includes many pictures and an embedded video.
+
+![Lighthouse Score Our Dogs](docs/testing/desktop_dogs_score.png)
+![Lighthouse Score Contact](docs/testing/mobile_contact_score.png)
+![Lighthouse Score Home](docs/testing/mobile_home_score.png)
+![Lighthouse Score Home Desktop](docs/testing/desktop_home_score.png)
+![Lighthouse Score Found a Friend](docs/testing/mobile_friend_score.png)
+
+### **Accessibility Testing**
+In addition to the Lighthouse Accessibility score I tested my website using the [WAVE Tool](https://wave.webaim.org/) which returned no errors.
 
 ### **User Story Testing**
 
@@ -224,6 +236,7 @@ Thanks to my Code Institute Mentor David Bowers for giving me valuable feedback 
 - The content was written by myself and the images on the *Found a Friend* page as well as the first three dogs on the *Our Dogs* page are my own.
 - I adapted my hamburger menu from a video with the according [Codepen](https://codepen.io/kevinpowell/pen/jxppmr) from Kevin Powell. 
 - To test my website I signed up for a free trial on [BrowserStack](https://www.browserstack.com/).
+- To test accessibility on my website I used to [WAVE Tool](https://wave.webaim.org/).
 
 ### **Media and Design**
 - The images used for the website are taken from [unsplash.com](https://unsplash.com/) and compressed using [tinypng.com](https://tinypng.com/). Some images of dogs are my own pictures.
