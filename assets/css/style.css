@@ -548,6 +548,10 @@ input#submit-button:hover {
     margin-top: 3rem;
 }
 
+section.heading.not-found {
+    padding-top: 0;
+}
+
 .not-found figure {
     margin: 2rem 0;
 }

@@ -29,6 +29,7 @@ The Furry Friends Shelter is an imagined dog shelter. This static website was cr
     - [**Our Dogs Page**](#our-dogs-page)
     - [**Contact Page**](#contact-page)
     - [**Found a Friend Page**](#found-a-friend-page)
+    - [**Custom 404 Page**](#custom-404-page)
   - [**Future Enhancements**](#future-enhancements)
   - [**Testing**](#testing)
     - [**Manual Testing**](#manual-testing)
@@ -181,6 +182,12 @@ The *Found a Friend* page shows a gallery of former shelter dogs with their new 
 To display the gallery I used CSS grid with column-spans for horizontal content.
 
 ![Found a Friend Page](docs/screenshots/found_a_friend.png)
+
+### **Custom 404 Page**
+
+I added a custom 404 page to direct the user to a customized error page that is consistent with the website style.
+
+![404 Page](docs/screenshots/404.png)
 
 ## **Future Enhancements**
 
