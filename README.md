@@ -132,7 +132,7 @@ To improve accessibility I added **Menu** as a text alternative and used `aria-h
 
 The navigation header is sticky to improve UX. This way the user can easily navigate the website and click on another page from anywhere. The navigation links have a `:hover` effect that is also used for the active page, as shown in the screenshot below.
 
-![Dekstop header](docs/screenshots/header_desktop.png)
+![Desktop header](docs/screenshots/header_desktop.png)
 
 Below my navigation, I have a hero image on each page. On the homepage, the hero is bigger than on the other pages. I added an overlay on top of the hero images to make sure that the text is readable.
 
@@ -215,7 +215,7 @@ I also used the *#peer-code-review* channel on Code Institute´s slack to get so
 While coding some issues kept me thinking for longer than others. Below is a list of issues that took me a while to fix.
 
 1. Having a full-width counter section on the *Home* page.
-    - The issue I found while adapting the counter section to desktop screen sizes was that it wasn´t full width on bigger screens.
+    - The issue I found while adapting the counter section to desktop screen sizes was that it was not full width on bigger screens.
 
     ![Issue with counter section](docs/screenshots/issue_counter.png)
     - This issue appeared because I limited the width of my `main` to `1600px`. I tried fixing this by using `position: absolute;`. However, this led me to another problem as it removed the element from the document flow. So I decided to use `width: 100vw` instead. To then move it to the left side of the screen without positioning it I used a negative margin with `calc()` to calculate it. \
@@ -228,8 +228,8 @@ While coding some issues kept me thinking for longer than others. Below is a lis
 
     ![Initial Mobile Home Performance](docs/testing/mobile_home_initial.png)
     - Trying to get this up was probably one of the hardest challenges for me during this project as I was already familiar with HTML and CSS, but not so much with performance optimization. \
-    First I tried compressing the images again, but that didn´t change much. Then I converted them to the *.webp* format and changed the image size. As I had downloaded the images from Unsplash in their original size I was able to really size down my images this way. \
-    The big problem that remained was FontAwesome. I only needed four icons so creating a Subset would have been a good solution. However, this is only possible with a paid plan so I tried hosting the files within the project instead of loading the CDN, but that didn´t change anything for the *Performance* value. \
+    First I tried compressing the images again, but that did not change much. Then I converted them to the *.webp* format and changed the image size. As I had downloaded the images from Unsplash in their original size I was able to really size down my images this way. \
+    The big problem that remained was FontAwesome. I only needed four icons so creating a Subset would have been a good solution. However, this is only possible with a paid plan so I tried hosting the files within the project instead of loading the CDN, but that did not change anything for the *Performance* value. \
     So I decided to not use FontAwesome and just download the icons and use them as images. I downloaded them from [Icons8](https://icons8.com/) and added a credit link in the footer. This significantly increased my *Performance* score. To further improve the mobile score I resized my hero images and used these smaller images for mobile-sized screens. This way I was able to score 100 at the *Performance* value too.
 
     ![Mobile Home Performance](docs/testing/mobile_home_score.png)
@@ -242,7 +242,7 @@ I used the [W3C Markup Validation Service](https://validator.w3.org/) to validat
 
 ![HTML Validator warnings](docs/testing/html_validator_warnings.png)
 
-I then used a `<h3>` inside my `<figcaption>` for my dog cards and added headings for the sections where it made sense. In a few cases it wouldn´t make sense to add a heading so I changed these articles to divs. Now all my pages came back with no errors or warnings.
+I then used a `<h3>` inside my `<figcaption>` for my dog cards and added headings for the sections where it made sense. In a few cases it would not make sense to add a heading so I changed these articles to divs. Now all my pages came back with no errors or warnings.
 
 ![HTML Validator](docs/testing/html_validator.png)
 
@@ -288,7 +288,7 @@ In addition to the Lighthouse Accessibility score I tested my website using the 
 | As a user, I want to apply for a dog.                                | There is a contact form where users can easily apply for a dog.                                                                                                                                | &check; |
 | As a user, I want to support the shelter.                            | It´s easy for the user to donate to the shelter and the donation link can be found on every page.                                                                                              | &check; |
 | As a user, I want to see pictures of dogs.                           | Navigating the website there are many pictures of dogs.                                                                                                                                        | &check; |
-| As the site owner, I want to find a loving home for the dogs.        | It´s ensured that the website user can find the dogs available for adoption, the adoption proccess is described and the shelter gets relevant information about the person applying for a dog. | &check; |
+| As the site owner, I want to find a loving home for the dogs.        | It´s ensured that the website user can find the dogs available for adoption, the adoption process is described and the shelter gets relevant information about the person applying for a dog. | &check; |
 | As the site owner, I want to get donations.                          | It´s easy for the user to donate to the shelter and the donation link can be found on every page.                                                                                              | &check; |
 
 ## **Deployment**
