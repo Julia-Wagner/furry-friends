@@ -253,6 +253,7 @@ The full validation results can be found here for:
 - [contact.html](docs/testing/html_validator_contact.pdf)
 - [contact_sent.html](docs/testing/html_validator_contact_sent.pdf)
 - [friend.html](docs/testing/html_validator_friend.pdf)
+- [404.html](docs/testing/html_validator_404.pdf)
 
 #### **CSS**
 
