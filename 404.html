@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- provide meta information about the website -->
+    <meta name="description" content="Contact page for the Furry Friends Shelter">
+    <meta name="keywords" content="Furry Friends Shelter">
+    <meta name="author" content="Julia Wagner">
+    <title>Furry Friends - Not found</title>
+    <!-- link to favicon -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/favicon/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png" sizes="16x16">
+    <!-- link to CSS file -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="header-logo" aria-label="link to Home page">
+            <img src="assets/images/logo.webp" alt="Furry Friends Shelter Logo links to homepage">
+        </a>
+        <!-- hamburger menu adapted from Kevin Powell (https://codepen.io/kevinpowell/pen/jxppmr) -->
+        <input type="checkbox" id="nav-burger" class="nav-burger">
+        <nav>
+            <ul class="nav-wrapper">
+                <li><a href="dogs.html" class="nav-button nav-link" aria-label="link to Our Dogs page">Our Dogs</a></li>
+                <li><a href="contact.html" class="nav-button nav-link" aria-label="link to Contact page">Contact</a></li>
+                <li><a href="friend.html" class="nav-button nav-link" aria-label="link to Found a Friend page">Found a Friend</a></li>
+                <li><a href="https://www.paypal.com/donate/buttons/partner" class="nav-button cta-button"
+                        target="_blank" rel="noopener" aria-label="open PayPal donations link in new tab">Donate</a>
+                </li>
+            </ul>
+        </nav>
+        <label for="nav-burger" class="nav-burger-label">
+            <span>Menu</span><img class="icon" src="assets/images/icons8_menu.png" alt="Menu Icon" width="32" height="32">
+        </label>
+    </header>
+    <section class="hero-container hero-smaller">
+        <div class="hero-text relative">
+            <h1 class="heading-margin">404</h1>
+        </div>
+    </section>
+
+    <!-- Main content -->
+    <main>
+        <section class="heading not-found container">
+            <h2 class="heading-margin">Whoops!</h2>
+            <p>We can´t find what you where looking for. But let our dogs guide you back on track.</p>
+            <figure>
+                <img src="assets/images/404_dogs.webp" alt="three dogs walking on a leash">
+            </figure>
+            <a href="dogs.html" class="cta-button" aria-label="link to Our Dogs page">Go back to Our Dogs</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <section class="footer-hours">
+                <h3 class="footer-heading">Opening hours</h3>
+                <p>11am-7pm Mon-Fri & Sun<br>9am-7pm Saturday</p>
+                <p class="address">
+                    <img class="icon" src="assets/images/icons8_location.png" alt="Location Icon" width="32" height="32">
+                    199 Dog Street, 5555 Dog
+                </p>
+            </section>
+            <!-- screenshot for MVP -->
+            <figure><img class="maps" src="assets/images/maps.webp" alt="Google Maps location"></figure>
+            <div class="link-container">
+                <section class="footer-links">
+                    <h4>Sitemap</h4>
+                    <ul>
+                        <li><a href="dogs.html" class="footer-link" aria-label="link to Our Dogs page">Our Dogs</a></li>
+                        <li><a href="contact.html" class="footer-link" aria-label="link to Contact page">Contact</a></li>
+                        <li><a href="friend.html" class="footer-link" aria-label="link to Found a Friend page">Found a Friend</a></li>
+                    </ul>
+                </section>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/" class="footer-link" target="_blank" rel="noopener"
+                        aria-label="open Furry Friends Shelter Facebook Page in new tab">
+                        <img class="icon" src="assets/images/icons8_facebook.png" alt="Facebook Icon" width="32" height="32"></a>
+                    <a href="https://instagram.com/" class="footer-link" target="_blank" rel="noopener"
+                        aria-label="open Furry Friends Shelter Instagram Page in new tab">
+                        <img class="icon" src="assets/images/icons8_instagram.png" alt="Instagram Icon" width="32" height="32"></a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">© 2023 Julia Wagner - This website was made for educational purposes only, images taken from
+            <a href="https://unsplash.com/" target="_blank" rel="noopener" aria-label="open Unsplash in new tab">unsplash.com</a>.
+            Icons by <a href="https://icons8.com" target="_blank" rel="noopener" aria-label="open Icons8 in new tab">Icons8</a>
+        </p>
+    </footer>
+</body>
+
+</html>

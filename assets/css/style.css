@@ -124,6 +124,7 @@ nav li {
     opacity: 1;
     transition: opacity 250ms ease-in-out 250ms;
 }
+
 /* end of code adapted from Kevin Powell https://codepen.io/kevinpowell/pen/jxppmr */
 
 .nav-burger-label span {
@@ -537,6 +538,26 @@ input#submit-button:hover {
 }
 
 /* ==========================================================================
+   404 page styles
+   ========================================================================== */
+.hero-text.relative {
+    position: relative;
+}
+
+.hero-text h1.heading-margin {
+    margin-top: 3rem;
+}
+
+.not-found figure {
+    margin: 2rem 0;
+}
+
+.not-found img {
+    max-width: 500px;
+    width: 100%;
+}
+
+/* ==========================================================================
    Media queries
    ========================================================================== */
 /* mobile logo size */
@@ -651,6 +672,7 @@ input#submit-button:hover {
     .nav-button.active::before {
         transform: scale(1, 1);
     }
+
     /* end of code adapted from Kevin Powell https://codepen.io/kevinpowell/pen/jxppmr */
 
     .nav-button.cta-button {
