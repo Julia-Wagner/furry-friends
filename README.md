@@ -198,7 +198,10 @@ I believe I added all the necessary features to create a minimum viable product 
 
 I deployed the first version of my project after finishing the header. From this moment on I made sure to always test my live website. While implementing new features I had the website open in **Google Chrome**, resizing the browser using *Dev Tools*. I also opened the website on my phone after pushing new features. I think you get a better feeling for the mobile version of a website when opening it on a real phone, instead of a smaller browser window. Furthermore, I have **Microsoft Edge** and **Firefox** installed and made sure to open my deployed website there frequently.
 
+I tested to a minimum screen width of **320px** and a maximum screen width of **3440px** with my monitor.
 To test **Safari** and **iOS** devices I signed up for a free trial on [BrowserStack](https://www.browserstack.com/) as I made a really good experience using this tool before.
+
+I also used the *#peer-code-review* channel on Code Institute´s slack to get some feedback from other students. Because of the feedback I received I added a placeholder text and border to all of the form inputs. I also added a custom 404 page because it was suggested there.
 
 ### **Issues**
 
