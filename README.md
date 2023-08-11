@@ -134,7 +134,7 @@ The navigation header is sticky to improve UX. This way the user can easily navi
 
 ![Desktop header](docs/screenshots/header_desktop.png)
 
-Below my navigation, I have a hero image on each page. On the homepage, the hero is bigger than on the other pages. I added an overlay on top of the hero images to make sure that the text is readable.
+Below my navigation, I have a hero image on each page. On the *Home* page, the hero is bigger than on the other pages. I added an overlay on top of the hero images to make sure that the text is readable.
 
 ![Hero index](docs/screenshots/hero_index.png)
 
@@ -167,7 +167,7 @@ For the fictional shelter, I created eight dogs available for adoption. On big s
 
 ### **Contact Page**
 
-On the *Contact* page, the website user finds an application form to apply for one of the shelter´s dogs. The user has to fill out their contact details (required fields are marked with a * and checked using the `required` attribute) and can give additional information.
+On the *Contact* page, the website user finds an application form to apply for one of the shelter´s dogs. The user has to fill in their contact details (required fields are marked with a * and checked using the `required` attribute) and can give additional information.
 
 ![Contact Page](docs/screenshots/contact.png)
 
@@ -231,8 +231,8 @@ While coding some issues kept me thinking for longer than others. Below is a lis
     ![Initial Mobile Home Performance](docs/testing/mobile_home_initial.png)
     - Trying to get this up was probably one of the hardest challenges for me during this project as I was already familiar with HTML and CSS, but not so much with performance optimization. \
     First I tried compressing the images again, but that did not change much. Then I converted them to the *.webp* format and changed the image size. As I had downloaded the images from Unsplash in their original size I was able to really size down my images this way. \
-    The big problem that remained was FontAwesome. I only needed four icons so creating a Subset would have been a good solution. However, this is only possible with a paid plan so I tried hosting the files within the project instead of loading the CDN, but that did not change anything for the *Performance* value. \
-    So I decided to not use FontAwesome and just download the icons and use them as images. I downloaded them from [Icons8](https://icons8.com/) and added a credit link in the footer. This significantly increased my *Performance* score. To further improve the mobile score I resized my hero images and used these smaller images for mobile-sized screens. This way I was able to score 100 at the *Performance* value too.
+    The big problem that remained was FontAwesome. I only needed four icons so creating a subset would have been a good solution. However, this is only possible with a paid plan so I tried hosting the files within the project instead of loading the CDN, but that did not change anything for the *Performance* score. \
+    So I decided to not use FontAwesome and just download the icons and use them as images. I downloaded them from [Icons8](https://icons8.com/) and added a credit link in the footer. This significantly increased my *Performance* score. To further improve the mobile score I resized my hero images and used these smaller images for mobile-sized screens. This way I was able to score 100 for the *Performance* value too.
 
     ![Mobile Home Performance](docs/testing/mobile_home_score.png)
 
@@ -244,7 +244,7 @@ I used the [W3C Markup Validation Service](https://validator.w3.org/) to validat
 
 ![HTML Validator warnings](docs/testing/html_validator_warnings.png)
 
-I then used a `<h3>` inside my `<figcaption>` for my dog cards and added headings for the sections where it made sense. In a few cases, it would not make sense to add a heading so I changed these articles to divs. Now all my pages came back with no errors or warnings.
+I then used a `<h3>` inside my `<figcaption>` for my dog cards and added headings for the sections where it made sense. In a few cases, it would not make sense to add a heading so I changed these articles to divs. Now all my pages come back with no errors or warnings.
 
 ![HTML Validator](docs/testing/html_validator.png)
 
