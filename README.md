@@ -203,12 +203,14 @@ I believe I added all the necessary features to create a minimum viable product 
 
 ### **Manual Testing**
 
-I deployed the first version of my project after finishing the header. From this moment on I made sure to always test my live website. While implementing new features I had the website open in **Google Chrome**, resizing the browser using *Dev Tools*. I also opened the website on my phone after pushing new features. I think you get a better feeling for the mobile version of a website when opening it on a real phone, instead of a smaller browser window. Furthermore, I have **Microsoft Edge** and **Firefox** installed and made sure to open my deployed website there frequently.
+I deployed the first version of my project after finishing the header. From this moment on I made sure to always test my live website. While implementing new features I had the website open in **Google Chrome**, resizing the browser using *Dev Tools*. I also opened the website on my phone and tablet after pushing new features. I think you get a better feeling for the mobile version of a website when opening it on a real phone, instead of a smaller browser window. Furthermore, I have **Microsoft Edge** and **Firefox** installed and made sure to open my deployed website there frequently. \
+I used the *#peer-code-review* channel on Code Institute´s Slack to get some feedback from other students. Because of the feedback I received I added a placeholder text and border to all of the form inputs. I also added a custom 404 page because it was suggested there.
 
 I tested to a minimum screen width of **320px** and a maximum screen width of **3440px** with my monitor.
 To test **Safari** and **iOS** devices I signed up for a free trial on [BrowserStack](https://www.browserstack.com/) as I made a really good experience using this tool before.
 
-I also used the *#peer-code-review* channel on Code Institute´s slack to get some feedback from other students. Because of the feedback I received I added a placeholder text and border to all of the form inputs. I also added a custom 404 page because it was suggested there.
+![BrowserStack testing iPhone](docs/testing/testing_iphone13_safari.png)
+![BrowserStack testing iPad](docs/testing/testing_ipad_pro_chrome.png)
 
 ### **Issues**
 
@@ -242,11 +244,11 @@ I used the [W3C Markup Validation Service](https://validator.w3.org/) to validat
 
 ![HTML Validator warnings](docs/testing/html_validator_warnings.png)
 
-I then used a `<h3>` inside my `<figcaption>` for my dog cards and added headings for the sections where it made sense. In a few cases it would not make sense to add a heading so I changed these articles to divs. Now all my pages came back with no errors or warnings.
+I then used a `<h3>` inside my `<figcaption>` for my dog cards and added headings for the sections where it made sense. In a few cases, it would not make sense to add a heading so I changed these articles to divs. Now all my pages came back with no errors or warnings.
 
 ![HTML Validator](docs/testing/html_validator.png)
 
-The full validation results can be found here for:
+The full validation results can be found here:
 
 - [index.html](docs/testing/html_validator_index.pdf)
 - [dogs.html](docs/testing/html_validator_dogs.pdf)
@@ -276,7 +278,7 @@ I followed the recommendations I got in the Lighthouse tab and made some perform
 
 ### **Accessibility Testing**
 
-In addition to the Lighthouse Accessibility score I tested my website using the [WAVE Tool](https://wave.webaim.org/) which returned no errors.
+In addition to the Lighthouse Accessibility score, I tested my website using the [WAVE Tool](https://wave.webaim.org/) which returned no errors.
 
 ### **User Story Testing**
 
